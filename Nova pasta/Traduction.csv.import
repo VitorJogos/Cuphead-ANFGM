@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://ciusrbooil1mh"
+
+[deps]
+
+files=["res://Nova pasta/Traduction.pt.translation", "res://Nova pasta/Traduction.en.translation"]
+
+source_file="res://Nova pasta/Traduction.csv"
+dest_files=["res://Nova pasta/Traduction.pt.translation", "res://Nova pasta/Traduction.en.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

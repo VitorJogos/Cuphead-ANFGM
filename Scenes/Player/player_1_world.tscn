@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://b2pv6u8134pih"]
+
+[ext_resource type="Texture2D" uid="uid://bfhgn1dkcnsi2" path="res://Assets/Cuphead World/side_idle.png" id="1_qwur0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4l6fp"]
+atlas = ExtResource("1_qwur0")
+region = Rect2(0, 0, 66, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q68ko"]
+atlas = ExtResource("1_qwur0")
+region = Rect2(66, 0, 66, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eaogk"]
+atlas = ExtResource("1_qwur0")
+region = Rect2(132, 0, 66, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cj5b3"]
+atlas = ExtResource("1_qwur0")
+region = Rect2(198, 0, 66, 93)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jxok"]
+atlas = ExtResource("1_qwur0")
+region = Rect2(264, 0, 66, 93)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_to1nc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4l6fp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q68ko")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eaogk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cj5b3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jxok")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cj5b3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eaogk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q68ko")
+}],
+"loop": 1,
+"name": &"Side_Idle",
+"speed": 5.0
+}]
+
+[node name="Player1_World" type="CharacterBody2D" unique_id=929099191]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1581677648]
+sprite_frames = SubResource("SpriteFrames_to1nc")
+animation = &"Side_Idle"

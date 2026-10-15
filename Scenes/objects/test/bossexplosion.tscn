@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://vfd3jguc8o4g"]
+
+[ext_resource type="Texture2D" uid="uid://n2m1xxtedkgb" path="res://Assets/bosses/explosion/boss_explosion_0001.png" id="1_g2wsf"]
+[ext_resource type="Texture2D" uid="uid://btd7swexar0cw" path="res://Assets/bosses/explosion/boss_explosion_0002.png" id="2_gr4gc"]
+[ext_resource type="Texture2D" uid="uid://v4ggwx6pb85t" path="res://Assets/bosses/explosion/boss_explosion_0003.png" id="3_d7uu7"]
+[ext_resource type="Texture2D" uid="uid://bij4lad8o2to2" path="res://Assets/bosses/explosion/boss_explosion_0004.png" id="4_kf6js"]
+[ext_resource type="Texture2D" uid="uid://cv6algme6wjfx" path="res://Assets/bosses/explosion/boss_explosion_0005.png" id="5_3d1m8"]
+[ext_resource type="Texture2D" uid="uid://c3lxpm7eb6vsa" path="res://Assets/bosses/explosion/boss_explosion_0006.png" id="6_ucwga"]
+[ext_resource type="Texture2D" uid="uid://dyeeu7gown6io" path="res://Assets/bosses/explosion/boss_explosion_0007.png" id="7_mbksw"]
+[ext_resource type="Texture2D" uid="uid://dorjueipycu7y" path="res://Assets/bosses/explosion/boss_explosion_0008.png" id="8_lfqcm"]
+[ext_resource type="Texture2D" uid="uid://dlvoj1hkyieg4" path="res://Assets/bosses/explosion/boss_explosion_0009.png" id="9_fsnt5"]
+[ext_resource type="Texture2D" uid="uid://damhy0kplgv6r" path="res://Assets/bosses/explosion/boss_explosion_0010.png" id="10_3xume"]
+[ext_resource type="Texture2D" uid="uid://bdjwydqph67wb" path="res://Assets/bosses/explosion/boss_explosion_0011.png" id="11_dfjn2"]
+[ext_resource type="Script" uid="uid://cqlmwwrtug3b3" path="res://Scripts/Player/objremove.gd" id="12_gr4gc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_13k2x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_g2wsf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_gr4gc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_d7uu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_kf6js")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_3d1m8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ucwga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_mbksw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_lfqcm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_fsnt5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3xume")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dfjn2")
+}],
+"loop": false,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="bossexplosion" type="AnimatedSprite2D" unique_id=1793835717]
+sprite_frames = SubResource("SpriteFrames_13k2x")
+autoplay = "default"
+frame = 10
+frame_progress = 1.0
+script = ExtResource("12_gr4gc")

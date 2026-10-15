@@ -1,0 +1,1996 @@
+[gd_scene format=3 uid="uid://03a667dx8h4t"]
+
+[ext_resource type="Script" uid="uid://bg5740urux6kg" path="res://Scripts/important/pausemenu.gd" id="1_lu074"]
+[ext_resource type="Texture2D" uid="uid://b66bjwjwgyehh" path="res://Assets/pause menu/pause_menu.png" id="1_qayqs"]
+[ext_resource type="FontFile" uid="uid://mrjsmv7bscca" path="res://Fonts/CupheadVogue-ExtraBold.ttf" id="2_6isuw"]
+[ext_resource type="Texture2D" uid="uid://3f7junllsvkb" path="res://Assets/pause menu/pause_menu2.png" id="2_lu074"]
+[ext_resource type="Texture2D" uid="uid://degeki3gh6gso" path="res://Assets/Miscellaneous Menus/Options Menu/options_bg.png" id="3_afjwq"]
+[ext_resource type="Texture2D" uid="uid://b2k7xk5ny83ed" path="res://Assets/Miscellaneous Menus/Controls Menu/MAIN PANEL-player1.png" id="4_heqyt"]
+[ext_resource type="Texture2D" uid="uid://dv8mywy5183a8" path="res://image.png" id="5_jjmvl"]
+[ext_resource type="Texture2D" uid="uid://bks1emtkful4h" path="res://Assets/Miscellaneous Menus/Controls Menu/MAIN PANEL-player2.png" id="5_v6mcd"]
+[ext_resource type="Texture2D" uid="uid://ofkdc8u8gdtd" path="res://Assets/Miscellaneous Menus/Controls Menu/CONTROL-A-GRAM Graphic.png" id="7_v6mcd"]
+[ext_resource type="FontFile" uid="uid://qua0ktbwkiei" path="res://Fonts/CupheadVogue-Bold-merged.ttf" id="8_thky7"]
+[ext_resource type="FontFile" uid="uid://b47k7q1fw2by5" path="res://Fonts/CupheadMemphis-Medium-merged.ttf" id="10_g7brl"]
+[ext_resource type="Texture2D" uid="uid://b7gaignhrj3yi" path="res://Assets/Miscellaneous Menus/Controls Menu/Controls Panel Button Outline_0.png" id="12_cnuaf"]
+[ext_resource type="Texture2D" uid="uid://b1gcwinx3hpxh" path="res://Assets/Miscellaneous Menus/Controls Menu/Controls Panel Button Outline_1.png" id="13_ybp6d"]
+[ext_resource type="Texture2D" uid="uid://b3pquygqt3fxs" path="res://Assets/Miscellaneous Menus/Controls Menu/Controls Panel Button Outline_2.png" id="14_g7brl"]
+[ext_resource type="FontFile" uid="uid://berd42oqubg5f" path="res://Fonts/CupheadVogue-Bold.otf" id="16_g7brl"]
+[ext_resource type="Texture2D" uid="uid://mlbte4lk25u6" path="res://Assets/Miscellaneous Menus/teste/image(1).png" id="16_x1pt6"]
+[ext_resource type="Texture2D" uid="uid://bxd088fp7iw0c" path="res://para me guiar/image2.png" id="17_o4nur"]
+[ext_resource type="Texture2D" uid="uid://blxq73vhrf5uw" path="res://Assets/Miscellaneous Menus/Controls Menu/control-mapper-popup-P1.png" id="17_yatq0"]
+[ext_resource type="Texture2D" uid="uid://dge5lau3thude" path="res://Assets/Miscellaneous Menus/Controls Menu/control-mapper-popup-P2.png" id="18_2w16v"]
+[ext_resource type="Texture2D" uid="uid://bn6cofipqmng7" path="res://para me guiar/image3.png" id="18_dhuol"]
+[ext_resource type="AudioStream" uid="uid://cm5ti2jlkntkm" path="res://Audios/Menu/Menu_Move.wav" id="19_g7brl"]
+[ext_resource type="Texture2D" uid="uid://dcyhudiuupyim" path="res://para me guiar/image4.png" id="19_v25va"]
+[ext_resource type="Texture2D" uid="uid://c8q4sry1mvqbq" path="res://para me guiar/image5.png" id="20_afjwq"]
+[ext_resource type="AudioStream" uid="uid://dsqyn8ido4jtd" path="res://Audios/Menu/Menu_Category_Select.wav" id="20_nt3p4"]
+[ext_resource type="Texture2D" uid="uid://kib6l3ym5ros" path="res://para me guiar/image6.png" id="21_e42nu"]
+[ext_resource type="Texture2D" uid="uid://c8nqydm4w6kut" path="res://para me guiar/image7.png" id="22_ykkjl"]
+[ext_resource type="Texture2D" uid="uid://t4qmadp3kylg" path="res://para me guiar/image8.png" id="23_8i1mh"]
+[ext_resource type="Texture2D" uid="uid://b0belbxj5gvuy" path="res://para me guiar/image9.png" id="24_xmu1u"]
+[ext_resource type="Texture2D" uid="uid://dpwseaw3qqep8" path="res://para me guiar/image.png" id="25_6bi85"]
+[ext_resource type="Texture2D" uid="uid://ytsu7mkucp0o" path="res://Assets/Miscellaneous Menus/Controls Menu/Controls Panel Popup Button Outline_0.png" id="28_dhuol"]
+[ext_resource type="Texture2D" uid="uid://eo4tjmpob5mk" path="res://Nova pasta/sprite_sheet (8).png" id="28_v25va"]
+[ext_resource type="PackedScene" uid="uid://cyhepldkidt7m" path="res://Scenes/mobile_hud.tscn" id="29_v25va"]
+[ext_resource type="Texture2D" uid="uid://d3wj4bjpsldc5" path="res://Assets/Mobile/Hud/set.png" id="32_o4nur"]
+[ext_resource type="Texture2D" uid="uid://cbjrsnppxyqe5" path="res://Assets/Mobile/Hud/ok.png" id="33_v25va"]
+[ext_resource type="Texture2D" uid="uid://dmd1af27dph0b" path="res://Assets/Mobile/Hud/back.png" id="34_afjwq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lu074"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qayqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_afjwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_lu074")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_joglx"]
+font = ExtResource("2_6isuw")
+font_size = 35
+
+[sub_resource type="LabelSettings" id="LabelSettings_11664"]
+font = ExtResource("2_6isuw")
+font_size = 35
+
+[sub_resource type="LabelSettings" id="LabelSettings_nsmgo"]
+font = ExtResource("2_6isuw")
+font_size = 35
+
+[sub_resource type="LabelSettings" id="LabelSettings_2t17o"]
+font = ExtResource("2_6isuw")
+font_size = 35
+
+[sub_resource type="LabelSettings" id="LabelSettings_heqyt"]
+font = ExtResource("2_6isuw")
+font_size = 35
+
+[sub_resource type="LabelSettings" id="LabelSettings_thky7"]
+font = ExtResource("2_6isuw")
+font_size = 35
+
+[sub_resource type="LabelSettings" id="LabelSettings_v6mcd"]
+font = ExtResource("2_6isuw")
+font_size = 35
+
+[sub_resource type="LabelSettings" id="LabelSettings_dxnk3"]
+font = ExtResource("2_6isuw")
+font_size = 35
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_heqyt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_heqyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_v6mcd")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_thky7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_v6mcd")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jjmvl"]
+font = ExtResource("8_thky7")
+font_size = 21
+
+[sub_resource type="Shader" id="Shader_8runj"]
+code = "shader_type canvas_item;
+
+uniform bool selecionado = true;
+uniform sampler2D textura_vermelha : source_color, hint_default_black, filter_nearest, repeat_enable;
+
+void fragment() {
+    // Pega o formato da letra
+    vec4 tex_color = texture(TEXTURE, UV);
+    
+    if (tex_color.a > 0.0) {
+        if (selecionado) {
+            // Cria um criador de repetição (tiling) para o papel não ficar esticado
+            vec2 uv_loop = fract(UV * 2.0); 
+            
+            // O PULO DO GATO: Limitamos o X entre 0.03 e 0.20 (onde fica o vermelho)
+            // E o Y entre 0.15 e 0.75 para fugir das bordas azuis do menu
+            vec2 uv_so_vermelho = vec2(
+                0.03 + (uv_loop.x * 0.17), 
+                0.15 + (uv_loop.y * 0.60)
+            );
+            
+            vec4 cor_papel = texture(textura_vermelha, uv_so_vermelho);
+            COLOR = vec4(cor_papel.rgb, tex_color.a);
+        } else {
+            // Cor preta/cinza padrão do Cuphead quando não está selecionado
+            COLOR = vec4(0.15, 0.15, 0.15, tex_color.a);
+        }
+    } else {
+        COLOR = tex_color;
+    }
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2w16v"]
+shader = SubResource("Shader_8runj")
+shader_parameter/selecionado = false
+shader_parameter/textura_vermelha = ExtResource("4_heqyt")
+
+[sub_resource type="LabelSettings" id="LabelSettings_fbe2a"]
+font = ExtResource("8_thky7")
+font_size = 21
+
+[sub_resource type="LabelSettings" id="LabelSettings_2qqyn"]
+font = ExtResource("10_g7brl")
+font_size = 27
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ybp6d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_cnuaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ybp6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_g7brl")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="Shader" id="Shader_yatq0"]
+code = "shader_type canvas_item;
+
+uniform bool selecionado = false;
+// Agora essa textura vai ler apenas o que capturamos antes do botão bege aparecer!
+uniform sampler2D texto_fundo : hint_screen_texture, repeat_disable, filter_nearest;
+
+void fragment() {
+    vec4 tex_color = texture(TEXTURE, UV);
+    
+    if (selecionado && tex_color.a > 0.0) {
+        // Pega a textura do fundo isolado
+        vec4 cor_fundo = texture(texto_fundo, SCREEN_UV);
+        COLOR = vec4(cor_fundo.rgb, tex_color.a);
+    } else {
+        COLOR = tex_color;
+    }
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ybp6d"]
+shader = SubResource("Shader_yatq0")
+shader_parameter/selecionado = false
+
+[sub_resource type="LabelSettings" id="LabelSettings_ybp6d"]
+font = ExtResource("8_thky7")
+font_size = 33
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g7brl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_cnuaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ybp6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_g7brl")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="Shader" id="Shader_g7brl"]
+code = "shader_type canvas_item;
+
+uniform bool selecionado = false;
+// Agora essa textura vai ler apenas o que capturamos antes do botão bege aparecer!
+uniform sampler2D texto_fundo : hint_screen_texture, repeat_disable, filter_nearest;
+
+void fragment() {
+    vec4 tex_color = texture(TEXTURE, UV);
+    
+    if (selecionado && tex_color.a > 0.0) {
+        // Pega a textura do fundo isolado
+        vec4 cor_fundo = texture(texto_fundo, SCREEN_UV);
+        COLOR = vec4(cor_fundo.rgb, tex_color.a);
+    } else {
+        COLOR = tex_color;
+    }
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nt3p4"]
+shader = SubResource("Shader_g7brl")
+shader_parameter/selecionado = false
+
+[sub_resource type="LabelSettings" id="LabelSettings_g7brl"]
+font = ExtResource("8_thky7")
+font_size = 33
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x1pt6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_cnuaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ybp6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_g7brl")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="Shader" id="Shader_ybp6d"]
+code = "shader_type canvas_item;
+
+uniform bool selecionado = false;
+// Agora essa textura vai ler apenas o que capturamos antes do botão bege aparecer!
+uniform sampler2D texto_fundo : hint_screen_texture, repeat_disable, filter_nearest;
+
+void fragment() {
+    vec4 tex_color = texture(TEXTURE, UV);
+    
+    if (selecionado && tex_color.a > 0.0) {
+        // Pega a textura do fundo isolado
+        vec4 cor_fundo = texture(texto_fundo, SCREEN_UV);
+        COLOR = vec4(cor_fundo.rgb, tex_color.a);
+    } else {
+        COLOR = tex_color;
+    }
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_x1pt6"]
+shader = SubResource("Shader_ybp6d")
+shader_parameter/selecionado = false
+
+[sub_resource type="LabelSettings" id="LabelSettings_cnuaf"]
+font = ExtResource("8_thky7")
+font_size = 33
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8runj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_cnuaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ybp6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_g7brl")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="Shader" id="Shader_nt3p4"]
+code = "shader_type canvas_item;
+
+uniform bool selecionado = false;
+// Agora essa textura vai ler apenas o que capturamos antes do botão bege aparecer!
+uniform sampler2D texto_fundo : hint_screen_texture, repeat_disable, filter_nearest;
+
+void fragment() {
+    vec4 tex_color = texture(TEXTURE, UV);
+    
+    if (selecionado && tex_color.a > 0.0) {
+        // Pega a textura do fundo isolado
+        vec4 cor_fundo = texture(texto_fundo, SCREEN_UV);
+        COLOR = vec4(cor_fundo.rgb, tex_color.a);
+    } else {
+        COLOR = tex_color;
+    }
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8runj"]
+shader = SubResource("Shader_nt3p4")
+shader_parameter/selecionado = false
+
+[sub_resource type="LabelSettings" id="LabelSettings_x1pt6"]
+font = ExtResource("8_thky7")
+font_size = 33
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nt3p4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_cnuaf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ybp6d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_g7brl")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="Shader" id="Shader_x1pt6"]
+code = "shader_type canvas_item;
+
+uniform bool selecionado = false;
+// Agora essa textura vai ler apenas o que capturamos antes do botão bege aparecer!
+uniform sampler2D texto_fundo : hint_screen_texture, repeat_disable, filter_nearest;
+
+void fragment() {
+    vec4 tex_color = texture(TEXTURE, UV);
+    
+    if (selecionado && tex_color.a > 0.0) {
+        // Pega a textura do fundo isolado
+        vec4 cor_fundo = texture(texto_fundo, SCREEN_UV);
+        COLOR = vec4(cor_fundo.rgb, tex_color.a);
+    } else {
+        COLOR = tex_color;
+    }
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yatq0"]
+shader = SubResource("Shader_x1pt6")
+shader_parameter/selecionado = false
+
+[sub_resource type="LabelSettings" id="LabelSettings_nt3p4"]
+font = ExtResource("8_thky7")
+font_size = 33
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v25va"]
+shader = SubResource("Shader_x1pt6")
+shader_parameter/selecionado = false
+
+[sub_resource type="LabelSettings" id="LabelSettings_cjn30"]
+font = ExtResource("8_thky7")
+font_size = 33
+
+[sub_resource type="LabelSettings" id="LabelSettings_8runj"]
+font = ExtResource("16_g7brl")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_yatq0"]
+font = ExtResource("16_g7brl")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_tnrgc"]
+font = ExtResource("16_g7brl")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_80exc"]
+font = ExtResource("16_g7brl")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_idx21"]
+font = ExtResource("16_g7brl")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_2w16v"]
+font = ExtResource("16_g7brl")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_1n7rh"]
+font = ExtResource("16_g7brl")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_dhuol"]
+font = ExtResource("16_g7brl")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_afjwq"]
+font = ExtResource("16_g7brl")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_e42nu"]
+font = ExtResource("16_g7brl")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_6bi85"]
+font = ExtResource("16_g7brl")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_jlaj0"]
+font = ExtResource("16_g7brl")
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_sdfhw"]
+font = ExtResource("16_g7brl")
+font_size = 20
+
+[sub_resource type="Animation" id="Animation_x1pt6"]
+resource_name = "1"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coisinha:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [119.0]
+}
+
+[sub_resource type="Animation" id="Animation_vmeuy"]
+resource_name = "10"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coisinha:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [447.26]
+}
+
+[sub_resource type="Animation" id="Animation_o4nur"]
+resource_name = "11"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coisinha:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [484.235]
+}
+
+[sub_resource type="Animation" id="Animation_dhuol"]
+resource_name = "12"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coisinha:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [520.585]
+}
+
+[sub_resource type="Animation" id="Animation_yatq0"]
+resource_name = "2"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coisinha:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [155.69]
+}
+
+[sub_resource type="Animation" id="Animation_2w16v"]
+resource_name = "3"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coisinha:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [191.995]
+}
+
+[sub_resource type="Animation" id="Animation_fbe2a"]
+resource_name = "4"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coisinha:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [228.565]
+}
+
+[sub_resource type="Animation" id="Animation_tnrgc"]
+resource_name = "5"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coisinha:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [265.97]
+}
+
+[sub_resource type="Animation" id="Animation_idx21"]
+resource_name = "6"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coisinha:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [301.84]
+}
+
+[sub_resource type="Animation" id="Animation_1n7rh"]
+resource_name = "7"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coisinha:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [338.485]
+}
+
+[sub_resource type="Animation" id="Animation_t5223"]
+resource_name = "8"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coisinha:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [375.2]
+}
+
+[sub_resource type="Animation" id="Animation_qdxk5"]
+resource_name = "9"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coisinha:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [410.74]
+}
+
+[sub_resource type="Animation" id="Animation_8runj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("coisinha:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [119.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8runj"]
+_data = {
+&"1": SubResource("Animation_x1pt6"),
+&"10": SubResource("Animation_vmeuy"),
+&"11": SubResource("Animation_o4nur"),
+&"12": SubResource("Animation_dhuol"),
+&"2": SubResource("Animation_yatq0"),
+&"3": SubResource("Animation_2w16v"),
+&"4": SubResource("Animation_fbe2a"),
+&"5": SubResource("Animation_tnrgc"),
+&"6": SubResource("Animation_idx21"),
+&"7": SubResource("Animation_1n7rh"),
+&"8": SubResource("Animation_t5223"),
+&"9": SubResource("Animation_qdxk5"),
+&"RESET": SubResource("Animation_8runj")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jlaj0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_o4nur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_dhuol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_v25va")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_afjwq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_e42nu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ykkjl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_8i1mh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_xmu1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_6bi85")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fbe2a"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_yatq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_2w16v")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_v7o50"]
+font = ExtResource("16_g7brl")
+font_size = 56
+
+[sub_resource type="LabelSettings" id="LabelSettings_v25va"]
+font = ExtResource("16_g7brl")
+font_size = 51
+
+[sub_resource type="LabelSettings" id="LabelSettings_pv521"]
+line_spacing = 3.295
+font = ExtResource("8_thky7")
+font_size = 47
+
+[sub_resource type="LabelSettings" id="LabelSettings_nnfqb"]
+line_spacing = 3.295
+font = ExtResource("8_thky7")
+font_size = 47
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v25va"]
+atlas = ExtResource("28_v25va")
+region = Rect2(0, 0, 119, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_afjwq"]
+atlas = ExtResource("28_v25va")
+region = Rect2(119, 0, 119, 58)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e42nu"]
+atlas = ExtResource("28_v25va")
+region = Rect2(238, 0, 119, 58)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6bi85"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v25va")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_afjwq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e42nu")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 15.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ykkjl"]
+font = ExtResource("16_g7brl")
+font_size = 19
+
+[sub_resource type="LabelSettings" id="LabelSettings_8i1mh"]
+font = ExtResource("16_g7brl")
+font_size = 19
+
+[sub_resource type="LabelSettings" id="LabelSettings_xmu1u"]
+font = ExtResource("16_g7brl")
+font_size = 19
+
+[sub_resource type="Animation" id="Animation_afjwq"]
+resource_name = "1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("red:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-266.13055, 242.32544)]
+}
+
+[sub_resource type="Animation" id="Animation_v25va"]
+resource_name = "2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("red:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 242.325)]
+}
+
+[sub_resource type="Animation" id="Animation_ykkjl"]
+resource_name = "3"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("red:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(262.075, 242.325)]
+}
+
+[sub_resource type="Animation" id="Animation_e42nu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("red:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-266.13055, 242.32544)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e42nu"]
+_data = {
+&"1": SubResource("Animation_afjwq"),
+&"2": SubResource("Animation_v25va"),
+&"3": SubResource("Animation_ykkjl"),
+&"RESET": SubResource("Animation_e42nu")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o4nur"]
+radius = 95.33
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v25va"]
+radius = 95.33
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_afjwq"]
+radius = 95.33
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dhuol"]
+radius = 95.33
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_e42nu"]
+radius = 95.33
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ykkjl"]
+radius = 95.33
+
+[node name="pausemenu" type="CanvasLayer" unique_id=772093746]
+process_mode = 3
+script = ExtResource("1_lu074")
+
+[node name="Control" type="Control" parent="." unique_id=1212102185]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Pausemenu" type="AnimatedSprite2D" parent="Control" unique_id=23629582]
+position = Vector2(568, 319)
+sprite_frames = SubResource("SpriteFrames_lu074")
+frame = 1
+
+[node name="resume" type="Label" parent="Control" unique_id=1181260841]
+visible = false
+layout_mode = 0
+offset_left = 334.895
+offset_top = 212.0
+offset_right = 797.895
+offset_bottom = 271.0
+text = "RESUME"
+label_settings = SubResource("LabelSettings_joglx")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="retry" type="Label" parent="Control" unique_id=1212033330]
+visible = false
+layout_mode = 0
+offset_left = 334.895
+offset_top = 249.45
+offset_right = 797.895
+offset_bottom = 308.45032
+text = "RETRY"
+label_settings = SubResource("LabelSettings_11664")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="options" type="Label" parent="Control" unique_id=2091290427]
+visible = false
+layout_mode = 0
+offset_left = 334.895
+offset_top = 288.0
+offset_right = 797.895
+offset_bottom = 347.0
+text = "OPTIONS"
+label_settings = SubResource("LabelSettings_nsmgo")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="exitthemap" type="Label" parent="Control" unique_id=214448100]
+visible = false
+layout_mode = 0
+offset_left = 339.3
+offset_top = 327.015
+offset_right = 802.3014
+offset_bottom = 386.015
+text = "EXIT TO MAP"
+label_settings = SubResource("LabelSettings_2t17o")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="audio" type="Label" parent="Control" unique_id=1326462976]
+visible = false
+layout_mode = 0
+offset_left = 334.715
+offset_top = 190.0
+offset_right = 797.71484
+offset_bottom = 249.0
+text = "AUDIO"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="controls" type="Label" parent="Control" unique_id=110273028]
+visible = false
+layout_mode = 0
+offset_left = 334.715
+offset_top = 270.0
+offset_right = 797.71484
+offset_bottom = 329.0
+text = "CONTROLS"
+label_settings = SubResource("LabelSettings_thky7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="language" type="Label" parent="Control" unique_id=1190650986]
+visible = false
+layout_mode = 0
+offset_left = 334.715
+offset_top = 310.0
+offset_right = 797.71484
+offset_bottom = 369.0
+text = "LANGUAGE"
+label_settings = SubResource("LabelSettings_v6mcd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="back" type="Label" parent="Control" unique_id=697115910]
+visible = false
+layout_mode = 0
+offset_left = 334.715
+offset_top = 350.0
+offset_right = 797.71484
+offset_bottom = 409.0
+text = "BACK"
+label_settings = SubResource("LabelSettings_dxnk3")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="visual" type="Label" parent="Control" unique_id=555100001]
+visible = false
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 334.7
+offset_top = 230.0
+offset_right = 797.7
+offset_bottom = 289.0
+text = "VISUAL"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Image" type="Sprite2D" parent="." unique_id=763132659]
+visible = false
+position = Vector2(575.00006, 326)
+scale = Vector2(0.8450521, 0.84505206)
+texture = ExtResource("5_jjmvl")
+
+[node name="TelaAudio" type="Control" parent="." unique_id=555100010]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="rotulo1" type="Label" parent="TelaAudio" unique_id=555100011]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 280.0
+offset_top = 108.0
+offset_right = 660.0
+offset_bottom = 167.0
+text = "VOLUME PRINCIPAL:"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="controle1" type="Label" parent="TelaAudio" unique_id=555100012]
+layout_mode = 0
+offset_left = 666.0
+offset_top = 108.0
+offset_right = 806.0
+offset_bottom = 167.0
+text = "|----------"
+label_settings = SubResource("LabelSettings_heqyt")
+vertical_alignment = 1
+
+[node name="rotulo2" type="Label" parent="TelaAudio" unique_id=555100013]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 280.0
+offset_top = 146.0
+offset_right = 660.0
+offset_bottom = 205.0
+text = "EFEITOS SONOROS:"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="controle2" type="Label" parent="TelaAudio" unique_id=555100014]
+layout_mode = 0
+offset_left = 666.0
+offset_top = 146.0
+offset_right = 806.0
+offset_bottom = 205.0
+text = "|----------"
+label_settings = SubResource("LabelSettings_heqyt")
+vertical_alignment = 1
+
+[node name="rotulo3" type="Label" parent="TelaAudio" unique_id=555100015]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 280.0
+offset_top = 185.0
+offset_right = 660.0
+offset_bottom = 244.0
+text = "MÚSICA:"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="controle3" type="Label" parent="TelaAudio" unique_id=555100016]
+layout_mode = 0
+offset_left = 666.0
+offset_top = 185.0
+offset_right = 806.0
+offset_bottom = 244.0
+text = "|----------"
+label_settings = SubResource("LabelSettings_heqyt")
+vertical_alignment = 1
+
+[node name="voltar" type="Label" parent="TelaAudio" unique_id=555100017]
+layout_mode = 0
+offset_left = 318.0
+offset_top = 263.0
+offset_right = 818.0
+offset_bottom = 322.0
+text = "VOLTAR"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TelaVisual" type="Control" parent="." unique_id=555100030]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="rotulo1" type="Label" parent="TelaVisual" unique_id=555100031]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 199.0
+offset_top = 108.0
+offset_right = 579.0
+offset_bottom = 167.0
+text = "RESOLUÇÃO:"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="controle1" type="Label" parent="TelaVisual" unique_id=555100032]
+layout_mode = 0
+offset_left = 589.0
+offset_top = 108.0
+offset_right = 849.0
+offset_bottom = 167.0
+text = "|----------"
+label_settings = SubResource("LabelSettings_heqyt")
+vertical_alignment = 1
+
+[node name="rotulo2" type="Label" parent="TelaVisual" unique_id=555100033]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 199.0
+offset_top = 146.0
+offset_right = 579.0
+offset_bottom = 205.0
+text = "TELA:"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="controle2" type="Label" parent="TelaVisual" unique_id=555100034]
+layout_mode = 0
+offset_left = 589.0
+offset_top = 146.0
+offset_right = 849.0
+offset_bottom = 205.0
+text = "|----------"
+label_settings = SubResource("LabelSettings_heqyt")
+vertical_alignment = 1
+
+[node name="rotulo3" type="Label" parent="TelaVisual" unique_id=555100035]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 199.0
+offset_top = 185.0
+offset_right = 579.0
+offset_bottom = 244.0
+text = "VSYNC:"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="controle3" type="Label" parent="TelaVisual" unique_id=555100036]
+layout_mode = 0
+offset_left = 589.0
+offset_top = 185.0
+offset_right = 849.0
+offset_bottom = 244.0
+text = "|----------"
+label_settings = SubResource("LabelSettings_heqyt")
+vertical_alignment = 1
+
+[node name="rotulo4" type="Label" parent="TelaVisual" unique_id=555100037]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 199.0
+offset_top = 223.0
+offset_right = 579.0
+offset_bottom = 282.0
+text = "OVERSCAN:"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="controle4" type="Label" parent="TelaVisual" unique_id=555100038]
+layout_mode = 0
+offset_left = 589.0
+offset_top = 223.0
+offset_right = 729.0
+offset_bottom = 282.0
+text = "|----------"
+label_settings = SubResource("LabelSettings_heqyt")
+vertical_alignment = 1
+
+[node name="rotulo5" type="Label" parent="TelaVisual" unique_id=555100039]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 199.0
+offset_top = 262.0
+offset_right = 579.0
+offset_bottom = 321.0
+text = "BRILHO:"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="controle5" type="Label" parent="TelaVisual" unique_id=555100040]
+layout_mode = 0
+offset_left = 589.0
+offset_top = 262.0
+offset_right = 729.0
+offset_bottom = 321.0
+text = "|----------"
+label_settings = SubResource("LabelSettings_heqyt")
+vertical_alignment = 1
+
+[node name="rotulo6" type="Label" parent="TelaVisual" unique_id=555100041]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 199.0
+offset_top = 300.0
+offset_right = 579.0
+offset_bottom = 359.0
+text = "COR DESFOC.:"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="controle6" type="Label" parent="TelaVisual" unique_id=555100042]
+layout_mode = 0
+offset_left = 589.0
+offset_top = 300.0
+offset_right = 729.0
+offset_bottom = 359.0
+text = "|----------"
+label_settings = SubResource("LabelSettings_heqyt")
+vertical_alignment = 1
+
+[node name="rotulo7" type="Label" parent="TelaVisual" unique_id=555100043]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 199.0
+offset_top = 339.0
+offset_right = 579.0
+offset_bottom = 398.0
+text = "TELA INICIAL:"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="controle7" type="Label" parent="TelaVisual" unique_id=555100044]
+layout_mode = 0
+offset_left = 589.0
+offset_top = 339.0
+offset_right = 849.0
+offset_bottom = 398.0
+text = "|----------"
+label_settings = SubResource("LabelSettings_heqyt")
+vertical_alignment = 1
+
+[node name="voltar" type="Label" parent="TelaVisual" unique_id=555100045]
+layout_mode = 0
+offset_left = 318.0
+offset_top = 417.0
+offset_right = 818.0
+offset_bottom = 476.0
+text = "VOLTAR"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TelaIdioma" type="Control" parent="." unique_id=555100050]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="nome" type="Label" parent="TelaIdioma" unique_id=555100051]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 318.0
+offset_top = 243.5
+offset_right = 818.0
+offset_bottom = 302.5
+text = "PORTUGUÊS (BR)"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="voltar" type="Label" parent="TelaIdioma" unique_id=555100052]
+layout_mode = 0
+offset_left = 318.0
+offset_top = 312.5
+offset_right = 818.0
+offset_bottom = 371.5
+text = "VOLTAR"
+label_settings = SubResource("LabelSettings_heqyt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Controls" type="Control" parent="." unique_id=1703104149]
+visible = false
+clip_children = 1
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Controlmenu" type="AnimatedSprite2D" parent="Controls" unique_id=1703004483]
+position = Vector2(571.28735, 326.875)
+scale = Vector2(0.5989242, 0.5989242)
+sprite_frames = SubResource("SpriteFrames_heqyt")
+
+[node name="controlagram" type="AnimatedSprite2D" parent="Controls" unique_id=719511293]
+position = Vector2(177, 543)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_thky7")
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="Controls" unique_id=1939745379]
+position = Vector2(215.25, 111.5)
+scale = Vector2(0.8675, 0.14500004)
+copy_mode = 2
+
+[node name="actions" type="Label" parent="Controls" unique_id=382235953]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 344.0
+offset_top = 70.0
+offset_right = 602.0
+offset_bottom = 101.0
+text = "AÇÕES"
+label_settings = SubResource("LabelSettings_jjmvl")
+
+[node name="keyboard" type="Label" parent="Controls" unique_id=1915006004]
+material = SubResource("ShaderMaterial_2w16v")
+layout_mode = 0
+offset_left = 631.345
+offset_top = 70.0
+offset_right = 889.3452
+offset_bottom = 101.0
+text = "TECLADO"
+label_settings = SubResource("LabelSettings_fbe2a")
+
+[node name="control" type="Label" parent="Controls" unique_id=1528904895]
+material = SubResource("ShaderMaterial_2w16v")
+layout_mode = 0
+offset_left = 873.53
+offset_top = 70.0
+offset_right = 1131.5302
+offset_bottom = 101.0
+text = "CONTROLE"
+label_settings = SubResource("LabelSettings_fbe2a")
+
+[node name="controls" type="Label" parent="Controls" unique_id=1323731492]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 67.0
+offset_right = 338.0
+offset_bottom = 112.0
+text = "CONTROLES"
+label_settings = SubResource("LabelSettings_2qqyn")
+horizontal_alignment = 1
+
+[node name="ok" type="AnimatedSprite2D" parent="Controls" unique_id=1829772585]
+position = Vector2(176, 152)
+scale = Vector2(0.6099745, 0.625)
+sprite_frames = SubResource("SpriteFrames_ybp6d")
+
+[node name="Label" type="Label" parent="Controls/ok" unique_id=1664363630]
+material = SubResource("ShaderMaterial_ybp6d")
+offset_left = -186.89305
+offset_top = -22.4
+offset_right = 183.61421
+offset_bottom = 18.6
+text = "Pronto"
+label_settings = SubResource("LabelSettings_ybp6d")
+horizontal_alignment = 1
+
+[node name="restartpadr" type="AnimatedSprite2D" parent="Controls" unique_id=238946788]
+position = Vector2(177, 190)
+scale = Vector2(0.6099745, 0.625)
+sprite_frames = SubResource("SpriteFrames_g7brl")
+
+[node name="Label" type="Label" parent="Controls/restartpadr" unique_id=829231016]
+material = SubResource("ShaderMaterial_nt3p4")
+offset_left = -191.8113
+offset_top = -20.8
+offset_right = 193.45073
+offset_bottom = 20.2
+text = "Restaurar padrões"
+label_settings = SubResource("LabelSettings_g7brl")
+horizontal_alignment = 1
+
+[node name="vibration" type="AnimatedSprite2D" parent="Controls" unique_id=1049755037]
+position = Vector2(176, 228)
+scale = Vector2(0.6099745, 0.625)
+sprite_frames = SubResource("SpriteFrames_x1pt6")
+
+[node name="Label" type="Label" parent="Controls/vibration" unique_id=635824637]
+material = SubResource("ShaderMaterial_x1pt6")
+offset_left = -178.696
+offset_top = -22.399998
+offset_right = 186.89305
+offset_bottom = 18.600006
+text = "Vibração: SIM"
+label_settings = SubResource("LabelSettings_cnuaf")
+horizontal_alignment = 1
+
+[node name="removecontroller" type="AnimatedSprite2D" parent="Controls" unique_id=1386599091]
+position = Vector2(177, 376)
+scale = Vector2(0.6099745, 0.625)
+sprite_frames = SubResource("SpriteFrames_8runj")
+
+[node name="Label" type="Label" parent="Controls/removecontroller" unique_id=1531742081]
+material = SubResource("ShaderMaterial_8runj")
+offset_left = -190.17188
+offset_top = -20.799997
+offset_right = 191.81128
+offset_bottom = 20.200006
+text = "Remover controle"
+label_settings = SubResource("LabelSettings_x1pt6")
+horizontal_alignment = 1
+
+[node name="remove" type="AnimatedSprite2D" parent="Controls" unique_id=955246916]
+position = Vector2(177, 413.00003)
+scale = Vector2(0.6099745, 0.625)
+sprite_frames = SubResource("SpriteFrames_nt3p4")
+
+[node name="Label" type="Label" parent="Controls/remove" unique_id=1171301299]
+material = SubResource("ShaderMaterial_yatq0")
+offset_left = -191.8113
+offset_top = -19.200047
+offset_right = 190.17186
+offset_bottom = 21.799957
+text = "Remover"
+label_settings = SubResource("LabelSettings_nt3p4")
+horizontal_alignment = 1
+
+[node name="touch" type="AnimatedSprite2D" parent="Controls" unique_id=191128309]
+position = Vector2(177, 452.38)
+scale = Vector2(0.6099745, 0.625)
+sprite_frames = SubResource("SpriteFrames_nt3p4")
+
+[node name="Label" type="Label" parent="Controls/touch" unique_id=556595458]
+material = SubResource("ShaderMaterial_v25va")
+offset_left = -190.17188
+offset_top = -21.408005
+offset_right = 190.17188
+offset_bottom = 19.592
+text = "Configurar o Hud Mobile"
+label_settings = SubResource("LabelSettings_cjn30")
+horizontal_alignment = 1
+
+[node name="coisinha" type="Sprite2D" parent="Controls" unique_id=1468118079]
+position = Vector2(739.07, 119)
+scale = Vector2(0.83112586, 1)
+texture = ExtResource("16_x1pt6")
+
+[node name="Controlstext" type="Control" parent="Controls" unique_id=597160879]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="mov horizontal" type="Label" parent="Controls/Controlstext" unique_id=1054289563]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 344.0
+offset_top = 109.0
+offset_right = 549.0
+offset_bottom = 136.0
+text = "Movimento horizontal"
+label_settings = SubResource("LabelSettings_8runj")
+
+[node name="Direita" type="Label" parent="Controls/Controlstext" unique_id=1452296708]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 344.0
+offset_top = 145.0
+offset_right = 549.0
+offset_bottom = 172.0
+text = "Direita"
+label_settings = SubResource("LabelSettings_yatq0")
+
+[node name="1" type="Label" parent="Controls/Controlstext/Direita" unique_id=910035796]
+top_level = true
+layout_mode = 0
+offset_left = 628.735
+offset_top = 143.0
+offset_right = 833.735
+offset_bottom = 170.0
+text = "seta pra direitexxxxxx"
+label_settings = SubResource("LabelSettings_tnrgc")
+
+[node name="2" type="Label" parent="Controls/Controlstext/Direita" unique_id=695834528]
+top_level = true
+layout_mode = 0
+offset_left = 870.0
+offset_top = 143.0
+offset_right = 1075.0004
+offset_bottom = 170.0
+text = "seta pra direitexxxxxx"
+label_settings = SubResource("LabelSettings_80exc")
+
+[node name="Esquerda" type="Label" parent="Controls/Controlstext" unique_id=1931840366]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 344.0
+offset_top = 181.0
+offset_right = 549.0
+offset_bottom = 208.0
+text = "Esquerda"
+label_settings = SubResource("LabelSettings_yatq0")
+
+[node name="1" type="Label" parent="Controls/Controlstext/Esquerda" unique_id=112655292]
+top_level = true
+layout_mode = 0
+offset_left = 628.735
+offset_top = 180.0
+offset_right = 833.735
+offset_bottom = 207.0
+text = "seta pra esquerdexxxx"
+label_settings = SubResource("LabelSettings_idx21")
+
+[node name="2" type="Label" parent="Controls/Controlstext/Esquerda" unique_id=507034178]
+top_level = true
+layout_mode = 0
+offset_left = 870.0
+offset_top = 180.0
+offset_right = 1075.0
+offset_bottom = 207.0
+text = "seta pra esquerdexxxx"
+label_settings = SubResource("LabelSettings_idx21")
+
+[node name="mov vertical" type="Label" parent="Controls/Controlstext" unique_id=673553855]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 344.0
+offset_top = 218.0
+offset_right = 549.0
+offset_bottom = 245.0
+text = "Movimento vertical"
+label_settings = SubResource("LabelSettings_2w16v")
+
+[node name="Cima" type="Label" parent="Controls/Controlstext" unique_id=5284752]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 344.0
+offset_top = 254.0
+offset_right = 549.0
+offset_bottom = 281.0
+text = "Cima"
+label_settings = SubResource("LabelSettings_2w16v")
+
+[node name="1" type="Label" parent="Controls/Controlstext/Cima" unique_id=905628412]
+top_level = true
+layout_mode = 0
+offset_left = 628.735
+offset_top = 255.0
+offset_right = 833.735
+offset_bottom = 282.0
+text = "seta pra cimaxxxxxx"
+label_settings = SubResource("LabelSettings_1n7rh")
+
+[node name="2" type="Label" parent="Controls/Controlstext/Cima" unique_id=1251626389]
+top_level = true
+layout_mode = 0
+offset_left = 870.0
+offset_top = 255.0
+offset_right = 1075.0
+offset_bottom = 282.0
+text = "seta pra cimaxxxxxx"
+label_settings = SubResource("LabelSettings_1n7rh")
+
+[node name="Baixo" type="Label" parent="Controls/Controlstext" unique_id=1334957422]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 344.0
+offset_top = 290.0
+offset_right = 549.0
+offset_bottom = 317.0
+text = "Baixo"
+label_settings = SubResource("LabelSettings_2w16v")
+
+[node name="1" type="Label" parent="Controls/Controlstext/Baixo" unique_id=821038467]
+top_level = true
+layout_mode = 0
+offset_left = 628.735
+offset_top = 290.0
+offset_right = 833.735
+offset_bottom = 317.0
+text = "seta pra baixoxxxxxx"
+label_settings = SubResource("LabelSettings_dhuol")
+
+[node name="2" type="Label" parent="Controls/Controlstext/Baixo" unique_id=445305990]
+top_level = true
+layout_mode = 0
+offset_left = 870.0
+offset_top = 290.0
+offset_right = 1075.0
+offset_bottom = 317.0
+text = "seta pra baixoxxxxxx"
+label_settings = SubResource("LabelSettings_dhuol")
+
+[node name="Pular" type="Label" parent="Controls/Controlstext" unique_id=1536376798]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 344.0
+offset_top = 326.0
+offset_right = 549.0
+offset_bottom = 353.0
+text = "Pular"
+label_settings = SubResource("LabelSettings_2w16v")
+
+[node name="1" type="Label" parent="Controls/Controlstext/Pular" unique_id=921404002]
+top_level = true
+layout_mode = 0
+offset_left = 628.735
+offset_top = 327.0
+offset_right = 833.735
+offset_bottom = 354.0
+text = "zexxxxxxxxxxxxxxxxxxxx"
+label_settings = SubResource("LabelSettings_afjwq")
+
+[node name="2" type="Label" parent="Controls/Controlstext/Pular" unique_id=4895718]
+top_level = true
+layout_mode = 0
+offset_left = 870.0
+offset_top = 327.0
+offset_right = 1075.0
+offset_bottom = 354.0
+text = "zexxxxxxxxxxxxxxxxxxxx"
+label_settings = SubResource("LabelSettings_afjwq")
+
+[node name="Atirar" type="Label" parent="Controls/Controlstext" unique_id=1465142762]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 344.0
+offset_top = 362.0
+offset_right = 549.0
+offset_bottom = 389.0
+text = "Atirar"
+label_settings = SubResource("LabelSettings_2w16v")
+
+[node name="1" type="Label" parent="Controls/Controlstext/Atirar" unique_id=526113723]
+top_level = true
+layout_mode = 0
+offset_left = 628.735
+offset_top = 364.0
+offset_right = 833.735
+offset_bottom = 391.0
+text = "xexxxxxxxxxxxxxxxxxx"
+label_settings = SubResource("LabelSettings_e42nu")
+
+[node name="2" type="Label" parent="Controls/Controlstext/Atirar" unique_id=49148332]
+top_level = true
+layout_mode = 0
+offset_left = 870.0
+offset_top = 364.0
+offset_right = 1075.0
+offset_bottom = 391.0
+text = "xexxxxxxxxxxxxxxxxxx"
+label_settings = SubResource("LabelSettings_e42nu")
+
+[node name="Tiro EX" type="Label" parent="Controls/Controlstext" unique_id=1059608497]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 344.0
+offset_top = 399.0
+offset_right = 549.0
+offset_bottom = 426.0
+text = "Tiro EX"
+label_settings = SubResource("LabelSettings_2w16v")
+
+[node name="1" type="Label" parent="Controls/Controlstext/Tiro EX" unique_id=1040060413]
+top_level = true
+layout_mode = 0
+offset_left = 628.735
+offset_top = 399.445
+offset_right = 833.735
+offset_bottom = 426.445
+text = "axxxxxxxxxxxxxxxxxxxxxx"
+label_settings = SubResource("LabelSettings_6bi85")
+
+[node name="2" type="Label" parent="Controls/Controlstext/Tiro EX" unique_id=2132245132]
+top_level = true
+layout_mode = 0
+offset_left = 870.0
+offset_top = 399.445
+offset_right = 1075.0
+offset_bottom = 426.445
+text = "axxxxxxxxxxxxxxxxxxxxxx"
+label_settings = SubResource("LabelSettings_6bi85")
+
+[node name="Trocar Arma" type="Label" parent="Controls/Controlstext" unique_id=758805665]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 344.0
+offset_top = 434.0
+offset_right = 549.0
+offset_bottom = 461.0
+text = "Trocar Arma"
+label_settings = SubResource("LabelSettings_2w16v")
+
+[node name="1" type="Label" parent="Controls/Controlstext/Trocar Arma" unique_id=531229830]
+top_level = true
+layout_mode = 0
+offset_left = 628.735
+offset_top = 437.475
+offset_right = 833.735
+offset_bottom = 464.475
+text = "nadaxxxxxxxxxxxxx"
+label_settings = SubResource("LabelSettings_jlaj0")
+
+[node name="Parar" type="Label" parent="Controls/Controlstext" unique_id=785089930]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 344.0
+offset_top = 471.0
+offset_right = 549.0
+offset_bottom = 498.0
+text = "Parar"
+label_settings = SubResource("LabelSettings_2w16v")
+
+[node name="1" type="Label" parent="Controls/Controlstext/Parar" unique_id=198359170]
+top_level = true
+layout_mode = 0
+offset_left = 628.735
+offset_top = 473.915
+offset_right = 833.735
+offset_bottom = 500.915
+text = "errixxxxxxxxxxxxxxxxxx"
+label_settings = SubResource("LabelSettings_sdfhw")
+
+[node name="2" type="Label" parent="Controls/Controlstext/Parar" unique_id=872671958]
+top_level = true
+layout_mode = 0
+offset_left = 870.0
+offset_top = 473.915
+offset_right = 1075.0
+offset_bottom = 500.915
+text = "errixxxxxxxxxxxxxxxxxx"
+label_settings = SubResource("LabelSettings_sdfhw")
+
+[node name="Correr" type="Label" parent="Controls/Controlstext" unique_id=1931986020]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 344.0
+offset_top = 507.0
+offset_right = 549.0
+offset_bottom = 534.0
+text = "Correr"
+label_settings = SubResource("LabelSettings_2w16v")
+
+[node name="1" type="Label" parent="Controls/Controlstext/Correr" unique_id=1757438410]
+top_level = true
+layout_mode = 0
+offset_left = 628.735
+offset_top = 507.275
+offset_right = 833.735
+offset_bottom = 534.27515
+text = "qexxxxxxxxxxxxxxx"
+label_settings = SubResource("LabelSettings_sdfhw")
+
+[node name="2" type="Label" parent="Controls/Controlstext/Correr" unique_id=1574927215]
+top_level = true
+layout_mode = 0
+offset_left = 870.0
+offset_top = 507.275
+offset_right = 1075.0
+offset_bottom = 534.27515
+text = "qexxxxxxxxxxxxxxx"
+label_settings = SubResource("LabelSettings_sdfhw")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Controls" unique_id=1889390603]
+libraries/ = SubResource("AnimationLibrary_8runj")
+
+[node name="se guiar" type="AnimatedSprite2D" parent="Controls" unique_id=1599997821]
+visible = false
+position = Vector2(572.0499, 330.14996)
+scale = Vector2(0.83594435, 0.8381511)
+sprite_frames = SubResource("SpriteFrames_jlaj0")
+
+[node name="changer" type="AnimatedSprite2D" parent="Controls" unique_id=573697565]
+visible = false
+top_level = true
+position = Vector2(570.925, 325.75003)
+scale = Vector2(0.58213896, 0.5643236)
+sprite_frames = SubResource("SpriteFrames_fbe2a")
+
+[node name="changename" type="Label" parent="Controls/changer" unique_id=1884976116]
+offset_left = -401.83707
+offset_top = -291.94247
+offset_right = 405.53018
+offset_bottom = -214.94247
+text = "Pular"
+label_settings = SubResource("LabelSettings_v7o50")
+horizontal_alignment = 1
+
+[node name="input selected" type="Label" parent="Controls/changer" unique_id=478372423]
+modulate = Color(0, 0, 0, 1)
+offset_left = -401.83698
+offset_top = -118.28325
+offset_right = 403.8125
+offset_bottom = -41.28325
+text = "A"
+label_settings = SubResource("LabelSettings_v25va")
+horizontal_alignment = 1
+
+[node name="text2" type="Label" parent="Controls/changer" unique_id=1168643315]
+visible = false
+modulate = Color(0, 0, 0, 1)
+offset_left = -400.11923
+offset_top = -105.87901
+offset_right = 407.24814
+offset_bottom = 18.120987
+text = "Agora pressione um botão ou mova um eixo para defini-lo como "
+label_settings = SubResource("LabelSettings_pv521")
+horizontal_alignment = 1
+autowrap_mode = 1
+
+[node name="text3" type="Label" parent="Controls/changer" unique_id=580362562]
+visible = false
+modulate = Color(0, 0, 0, 1)
+offset_left = -403.55484
+offset_top = 234.35129
+offset_right = 403.81253
+offset_bottom = 358.35126
+text = "1"
+label_settings = SubResource("LabelSettings_nnfqb")
+horizontal_alignment = 1
+autowrap_mode = 1
+
+[node name="red" type="Sprite2D" parent="Controls/changer" unique_id=1102398437]
+position = Vector2(-266.13055, 242.32544)
+scale = Vector2(2.3673928, 1.8636903)
+texture = ExtResource("28_v25va")
+hframes = 3
+vframes = 10
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Controls/changer/red" unique_id=1652552805]
+position = Vector2(0.725566, 0.0622603)
+scale = Vector2(0.99999976, 1.0349333)
+sprite_frames = SubResource("SpriteFrames_6bi85")
+autoplay = "default"
+frame_progress = 0.94651407
+
+[node name="1" type="Sprite2D" parent="Controls/changer" unique_id=129397146]
+position = Vector2(-262.69498, 252.07161)
+scale = Vector2(0.6502168, 1.1391631)
+texture = ExtResource("28_dhuol")
+
+[node name="1" type="Label" parent="Controls/changer/1" unique_id=1825163454]
+modulate = Color(0, 0, 0, 1)
+top_level = true
+offset_left = 392.0
+offset_top = 454.0
+offset_right = 537.0
+offset_bottom = 531.0
+text = "Trocar"
+label_settings = SubResource("LabelSettings_ykkjl")
+
+[node name="2" type="Sprite2D" parent="Controls/changer" unique_id=661781556]
+position = Vector2(2.155, 252.072)
+scale = Vector2(0.6502168, 1.1391631)
+texture = ExtResource("28_dhuol")
+
+[node name="2" type="Label" parent="Controls/changer/2" unique_id=61667168]
+modulate = Color(0, 0, 0, 1)
+top_level = true
+offset_left = 536.0
+offset_top = 454.0
+offset_right = 681.0
+offset_bottom = 531.0
+text = "Remover"
+label_settings = SubResource("LabelSettings_8i1mh")
+
+[node name="3" type="Sprite2D" parent="Controls/changer" unique_id=937305906]
+position = Vector2(264.875, 252.072)
+scale = Vector2(0.6502168, 1.1391631)
+texture = ExtResource("28_dhuol")
+
+[node name="3" type="Label" parent="Controls/changer/3" unique_id=1431671317]
+modulate = Color(0, 0, 0, 1)
+top_level = true
+offset_left = 688.0
+offset_top = 454.0
+offset_right = 833.0
+offset_bottom = 531.0
+text = "Cancelar"
+label_settings = SubResource("LabelSettings_xmu1u")
+
+[node name="redam" type="AnimationPlayer" parent="Controls/changer" unique_id=363470929]
+libraries/ = SubResource("AnimationLibrary_e42nu")
+
+[node name="Mobile_HUD" parent="Controls" unique_id=996118429 instance=ExtResource("29_v25va")]
+visible = false
+
+[node name="carregar" type="OptionButton" parent="Controls" unique_id=2015683226]
+layout_mode = 0
+offset_left = 472.0
+offset_top = 41.0
+offset_right = 623.0
+offset_bottom = 73.0
+
+[node name="salvar" type="Button" parent="Controls" unique_id=1459602878]
+layout_mode = 0
+offset_left = 755.0
+offset_top = 40.0
+offset_right = 882.0
+offset_bottom = 72.0
+text = "Salvar Config
+"
+
+[node name="TextEdit" type="LineEdit" parent="Controls/salvar" unique_id=863557580]
+layout_mode = 0
+offset_left = 127.0
+offset_top = -1.0
+offset_right = 255.0
+offset_bottom = 32.0
+text = "# nome"
+
+[node name="Excluir" type="Button" parent="Controls" unique_id=1820931280]
+layout_mode = 0
+offset_left = 626.0
+offset_top = 40.0
+offset_right = 753.0
+offset_bottom = 72.0
+text = "Excluir Config
+"
+
+[node name="entrada" type="OptionButton" parent="Controls" unique_id=1422450006]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 42.0
+offset_right = 466.0
+offset_bottom = 73.0
+selected = 0
+item_count = 1
+popup/item_0/text = "None"
+popup/item_0/id = 0
+
+[node name="Timer" type="Timer" parent="." unique_id=858051061]
+wait_time = 0.05
+one_shot = true
+
+[node name="Timer2" type="Timer" parent="." unique_id=546743579]
+wait_time = 0.2
+one_shot = true
+
+[node name="Timer3" type="Timer" parent="." unique_id=1257663709]
+wait_time = 5.0
+one_shot = true
+
+[node name="Move" type="AudioStreamPlayer2D" parent="." unique_id=1999383789]
+stream = ExtResource("19_g7brl")
+
+[node name="Move2" type="AudioStreamPlayer2D" parent="." unique_id=186959893]
+stream = ExtResource("20_nt3p4")
+
+[node name="up" type="TouchScreenButton" parent="." unique_id=126274420]
+modulate = Color(1, 1, 1, 0.57900006)
+position = Vector2(92, 406)
+scale = Vector2(0.415, 0.415)
+texture_normal = ExtResource("32_o4nur")
+shape = SubResource("CircleShape2D_o4nur")
+action = "M_up"
+
+[node name="left" type="TouchScreenButton" parent="." unique_id=803587662]
+modulate = Color(1, 1, 1, 0.57900006)
+position = Vector2(8.999999, 568)
+rotation = -1.5707964
+scale = Vector2(0.415, 0.415)
+texture_normal = ExtResource("32_o4nur")
+shape = SubResource("CircleShape2D_v25va")
+action = "M_left"
+
+[node name="right" type="TouchScreenButton" parent="." unique_id=784224186]
+modulate = Color(1, 1, 1, 0.57900006)
+position = Vector2(250, 487)
+rotation = 1.5707964
+scale = Vector2(0.415, 0.415)
+texture_normal = ExtResource("32_o4nur")
+shape = SubResource("CircleShape2D_afjwq")
+action = "M_right"
+
+[node name="down" type="TouchScreenButton" parent="." unique_id=1841620687]
+modulate = Color(1, 1, 1, 0.57900006)
+position = Vector2(171.99998, 649)
+rotation = -3.1415925
+scale = Vector2(0.415, 0.415)
+texture_normal = ExtResource("32_o4nur")
+shape = SubResource("CircleShape2D_dhuol")
+action = "M_down"
+
+[node name="ok" type="TouchScreenButton" parent="." unique_id=1920611610]
+modulate = Color(1, 1, 1, 0.57900006)
+position = Vector2(857.99994, 524)
+scale = Vector2(0.595, 0.595)
+texture_normal = ExtResource("33_v25va")
+shape = SubResource("CircleShape2D_e42nu")
+action = "M_ok"
+
+[node name="back" type="TouchScreenButton" parent="." unique_id=438345922]
+modulate = Color(1, 1, 1, 0.57900006)
+position = Vector2(998.99994, 523)
+scale = Vector2(0.595, 0.595)
+texture_normal = ExtResource("34_afjwq")
+shape = SubResource("CircleShape2D_ykkjl")
+action = "M_back"
+
+[editable path="Controls/Mobile_HUD"]

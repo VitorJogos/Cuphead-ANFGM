@@ -1,0 +1,192 @@
+[gd_scene format=3 uid="uid://bb0rrghw26hqx"]
+
+[ext_resource type="Script" uid="uid://vd6d78bw8l0s" path="res://Scripts/Player/peashooter.gd" id="1_i3l1o"]
+[ext_resource type="Texture2D" uid="uid://bc6jdrl22nymn" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_death_0001.png" id="2_bmdd8"]
+[ext_resource type="Texture2D" uid="uid://cfrel6x2rdh4a" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_death_0002.png" id="3_wkqfm"]
+[ext_resource type="Texture2D" uid="uid://b3ct4fh8slbnp" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_death_0003.png" id="4_2e64c"]
+[ext_resource type="Texture2D" uid="uid://fukkvmi8k71b" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_death_0004.png" id="5_br4gm"]
+[ext_resource type="Texture2D" uid="uid://dotcv6u68w7l2" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_death_0005.png" id="6_es10o"]
+[ext_resource type="Texture2D" uid="uid://75rwdhth4ur6" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_death_0006.png" id="7_27hjs"]
+[ext_resource type="Texture2D" uid="uid://cac8h3vlk7gyl" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_death_0007.png" id="8_2w38q"]
+[ext_resource type="Texture2D" uid="uid://nt1s38fjugq0" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_death_0008.png" id="9_da7a3"]
+[ext_resource type="Texture2D" uid="uid://dhh02nkn4isr4" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_intro_0001.png" id="10_27hjs"]
+[ext_resource type="Texture2D" uid="uid://b7us4gckrw7um" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_intro_0002.png" id="11_2w38q"]
+[ext_resource type="Texture2D" uid="uid://c2g4pbywun770" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_intro_0003.png" id="12_2knfa"]
+[ext_resource type="Texture2D" uid="uid://d34twxw241ry8" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_loop_0001.png" id="13_da7a3"]
+[ext_resource type="Texture2D" uid="uid://cbeaappxdnviw" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_loop_0002.png" id="14_um5qg"]
+[ext_resource type="Texture2D" uid="uid://b47cvdsgt328v" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_loop_0003.png" id="15_v0hei"]
+[ext_resource type="Texture2D" uid="uid://0iddwcha8go1" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_loop_0004.png" id="16_13uc5"]
+[ext_resource type="Texture2D" uid="uid://vus2xt40mq7q" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_loop_0005.png" id="17_nmu2b"]
+[ext_resource type="AudioStream" uid="uid://d0172g4xyshme" path="res://Audios/Cuphead/Shoots/ex/sfx_player_weapon_peashoot_ex_impact_01.wav" id="18_dkxpm"]
+[ext_resource type="Texture2D" uid="uid://cov4b4iuhqg0t" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_loop_0007.png" id="18_xp834"]
+[ext_resource type="AudioStream" uid="uid://wlpi6j88prkr" path="res://Audios/Cuphead/Shoots/ex/sfx_player_weapon_peashoot_ex_impact_02.wav" id="19_0khb2"]
+[ext_resource type="Texture2D" uid="uid://rehmxkk4o5kb" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_loop_0008.png" id="19_ocaum"]
+[ext_resource type="AudioStream" uid="uid://srf2h7gixgca" path="res://Audios/Cuphead/Shoots/ex/sfx_player_weapon_peashoot_ex_impact_03.wav" id="20_rwm25"]
+[ext_resource type="Texture2D" uid="uid://cdnvjw5r6vnqv" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_loop_0009.png" id="20_t0a4r"]
+[ext_resource type="AudioStream" uid="uid://55b24bhxhjgc" path="res://Audios/Cuphead/Shoots/ex/main/sfx_player_ex_forward_ground_01.wav" id="21_7ldau"]
+[ext_resource type="Texture2D" uid="uid://cyd4858hhrnau" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_loop_0010.png" id="21_dkxpm"]
+[ext_resource type="Texture2D" uid="uid://b7dk14dsd5b7x" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_loop_0011.png" id="22_0khb2"]
+[ext_resource type="AudioStream" uid="uid://c6qxcq5okkm7w" path="res://Audios/Cuphead/Shoots/ex/main/sfx_player_ex_forward_ground_02.wav" id="22_ei1yk"]
+[ext_resource type="AudioStream" uid="uid://dkjxs7b7kuljj" path="res://Audios/Cuphead/Shoots/ex/main/sfx_player_ex_forward_ground_03.wav" id="23_nvyt0"]
+[ext_resource type="Texture2D" uid="uid://cwm5b1xmwufca" path="res://Assets/shoots/roundabount/ex/weapon_roundabout_EX_loop_0012.png" id="23_rwm25"]
+[ext_resource type="AudioStream" uid="uid://bo8on56g358fd" path="res://Audios/Cuphead/Shoots/ex/main/sfx_player_ex_forward_ground_04.wav" id="24_3af32"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_27hjs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_bmdd8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wkqfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2e64c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_br4gm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_es10o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_27hjs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2w38q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_da7a3")
+}],
+"loop": false,
+"name": &"death",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_27hjs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2w38q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_2knfa")
+}],
+"loop": false,
+"name": &"intro",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_da7a3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_um5qg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_v0hei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_13uc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_nmu2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_xp834")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ocaum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_t0a4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_dkxpm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_0khb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_rwm25")
+}],
+"loop": true,
+"name": &"main",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"turn",
+"speed": 24.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2w38q"]
+size = Vector2(87, 95)
+
+[node name="rounda_ex" type="Area2D" unique_id=573293350]
+top_level = true
+script = ExtResource("1_i3l1o")
+dano = 6
+shoot = 2
+ex = true
+speed = 500
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2035019207]
+sprite_frames = SubResource("SpriteFrames_27hjs")
+animation = &"intro"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=90220055 groups=["boss"]]
+shape = SubResource("RectangleShape2D_2w38q")
+
+[node name="Timer" type="Timer" parent="." unique_id=1371026107]
+wait_time = 20.0
+one_shot = true
+autostart = true
+
+[node name="Colided1" type="AudioStreamPlayer2D" parent="." unique_id=1290694522]
+stream = ExtResource("18_dkxpm")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided2" type="AudioStreamPlayer2D" parent="." unique_id=743022011]
+stream = ExtResource("19_0khb2")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided3" type="AudioStreamPlayer2D" parent="." unique_id=790061946]
+stream = ExtResource("20_rwm25")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Start1" type="AudioStreamPlayer2D" parent="." unique_id=630807967]
+stream = ExtResource("21_7ldau")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="Start2" type="AudioStreamPlayer2D" parent="." unique_id=1172078386]
+stream = ExtResource("22_ei1yk")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="Start3" type="AudioStreamPlayer2D" parent="." unique_id=630079058]
+stream = ExtResource("23_nvyt0")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="Start4" type="AudioStreamPlayer2D" parent="." unique_id=503157659]
+stream = ExtResource("24_3af32")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="Timer2" type="Timer" parent="." unique_id=693756414]
+wait_time = 0.05
+one_shot = true
+autostart = true
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]

@@ -1,0 +1,394 @@
+[gd_scene format=3 uid="uid://cptmkfcriwqtd"]
+
+[ext_resource type="Texture2D" uid="uid://mndi1ptam24i" path="res://icon.svg" id="1_15qo1"]
+[ext_resource type="PackedScene" uid="uid://7ia4sst1bbsd" path="res://Scenes/Player/player_1.tscn" id="2_kpu7f"]
+[ext_resource type="Script" uid="uid://c7lr86lbrdnls" path="res://Scripts/object/test/saco.gd" id="2_m0xqr"]
+[ext_resource type="Script" uid="uid://b4by2844qi2k8" path="res://Scripts/Scenes/touch_screen_button.gd" id="3_3n873"]
+[ext_resource type="Texture2D" uid="uid://cfuenlhic4gos" path="res://Assets/test/saco.png" id="3_ifqnq"]
+[ext_resource type="PackedScene" uid="uid://cuidh02sgetqm" path="res://Scenes/objects/test/parry.tscn" id="3_kbjuv"]
+[ext_resource type="FontFile" uid="uid://cuxplhjtsvjod" path="res://Fonts/CupheadVogue-ExtraBold #89098.ttf" id="3_msx0k"]
+[ext_resource type="PackedScene" uid="uid://cyhepldkidt7m" path="res://Scenes/mobile_hud.tscn" id="4_15qo1"]
+[ext_resource type="PackedScene" uid="uid://chcf5p721yaqa" path="res://Scenes/HUD.tscn" id="5_bc04g"]
+[ext_resource type="FontFile" uid="uid://mrjsmv7bscca" path="res://Fonts/CupheadVogue-ExtraBold.ttf" id="10_kdq2s"]
+[ext_resource type="Script" uid="uid://y3jkd4hpoqeh" path="res://Scripts/Player/Superchoose.gd" id="10_nu6al"]
+[ext_resource type="PackedScene" uid="uid://dibcvon6ny6tc" path="res://Scenes/important/fighttext.tscn" id="10_sm5jj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bc04g"]
+size = Vector2(1261, 197)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kbjuv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ifqnq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_msx0k"]
+radius = 60.0
+height = 334.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_m0xqr"]
+font = ExtResource("3_msx0k")
+font_size = 29
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_sm5jj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Marker2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(877, 321)]
+}
+
+[sub_resource type="Animation" id="Animation_nu6al"]
+resource_name = "new_animation"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Marker2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.040000014, 0.1, 0.11, 0.16, 0.19999999),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(877, 321), Vector2(877, 321), Vector2(902, 35), Vector2(1001, 25), Vector2(1003, 337), Vector2(1049, 166)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kdq2s"]
+_data = {
+&"RESET": SubResource("Animation_sm5jj"),
+&"new_animation": SubResource("Animation_nu6al")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_kdq2s"]
+font = ExtResource("10_kdq2s")
+
+[sub_resource type="LabelSettings" id="LabelSettings_6s2c6"]
+font = ExtResource("10_kdq2s")
+font_size = 22
+
+[node name="Test Area" type="Node2D" unique_id=301513000]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1428408906 groups=["atiravel"]]
+z_index = -2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2033641808]
+position = Vector2(546.5, 650.5)
+shape = SubResource("RectangleShape2D_bc04g")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CollisionShape2D" unique_id=473875101]
+position = Vector2(13.499998, -1.335144e-05)
+scale = Vector2(10.156249, 1.585938)
+texture = ExtResource("1_15qo1")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=271634372]
+position = Vector2(1225, 190)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_bc04g")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=1444500402]
+position = Vector2(-121, 246)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_bc04g")
+
+[node name="Saco" type="Area2D" parent="." unique_id=1309816246 groups=["Boss", "dano"]]
+visibility_layer = 2
+z_index = -2
+script = ExtResource("2_m0xqr")
+saco = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Saco" unique_id=957385761]
+position = Vector2(944, 173)
+scale = Vector2(0.4871795, 0.4871795)
+sprite_frames = SubResource("SpriteFrames_kbjuv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Saco" unique_id=1013303485]
+position = Vector2(944, 175)
+shape = SubResource("CapsuleShape2D_msx0k")
+
+[node name="Label" type="Label" parent="Saco" unique_id=166792367]
+offset_left = 683.0
+offset_top = 135.0
+offset_right = 874.0
+offset_bottom = 175.0
+text = "HP - 0"
+label_settings = SubResource("LabelSettings_m0xqr")
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="Timer" type="Timer" parent="Saco" unique_id=809478704]
+wait_time = 4.0
+one_shot = true
+
+[node name="explosionap" type="AnimationPlayer" parent="Saco" unique_id=2108069900]
+libraries/ = SubResource("AnimationLibrary_kdq2s")
+autoplay = &"new_animation"
+
+[node name="Marker2D" type="Marker2D" parent="Saco" unique_id=2131073775]
+position = Vector2(877, 321)
+
+[node name="explodetiemr" type="Timer" parent="Saco" unique_id=2144057396]
+wait_time = 0.4
+one_shot = true
+
+[node name="parry" parent="." unique_id=458815001 instance=ExtResource("3_kbjuv")]
+z_index = -2
+position = Vector2(545, 326)
+
+[node name="Player1" parent="." unique_id=1893454799 instance=ExtResource("2_kpu7f")]
+position = Vector2(126, 488)
+
+[node name="Mobile_HUD" parent="." unique_id=996118429 instance=ExtResource("4_15qo1")]
+
+[node name="HUD" parent="." unique_id=1198476980 instance=ExtResource("5_bc04g")]
+
+[node name="Buttons" type="CanvasLayer" parent="." unique_id=644664437]
+
+[node name="dashb" type="Button" parent="Buttons" unique_id=489419099]
+offset_left = 1028.0
+offset_top = 95.0
+offset_right = 1134.0
+offset_bottom = 160.0
+focus_mode = 0
+text = "ABUUUUUU"
+autowrap_mode = 1
+language = "pt"
+script = ExtResource("3_3n873")
+action_name = "dash"
+
+[node name="jumpb" type="Button" parent="Buttons" unique_id=1777200243]
+offset_left = 1028.0
+offset_top = 24.0
+offset_right = 1134.0
+offset_bottom = 89.0
+focus_mode = 0
+text = "ABUUUUUU"
+autowrap_mode = 1
+language = "pt"
+script = ExtResource("3_3n873")
+
+[node name="aimb" type="Button" parent="Buttons" unique_id=41912274]
+offset_left = 271.0
+offset_top = 92.0
+offset_right = 377.0
+offset_bottom = 157.0
+focus_mode = 0
+text_overrun_behavior = 3
+autowrap_mode = 2
+autowrap_trim_flags = 0
+clip_text = true
+language = "pt"
+script = ExtResource("3_3n873")
+action_name = "aim"
+
+[node name="shootb" type="Button" parent="Buttons" unique_id=439560980]
+offset_left = 271.0
+offset_top = 21.0
+offset_right = 377.0
+offset_bottom = 86.0
+focus_mode = 0
+autowrap_mode = 1
+language = "pt"
+script = ExtResource("3_3n873")
+action_name = "shoot"
+
+[node name="rightb" type="Button" parent="Buttons" unique_id=1309473294]
+offset_left = 465.0
+offset_top = 92.0
+offset_right = 571.0
+offset_bottom = 157.0
+focus_mode = 0
+text = "ABUUUUUU"
+autowrap_mode = 1
+language = "pt"
+script = ExtResource("3_3n873")
+action_name = "right"
+
+[node name="leftb" type="Button" parent="Buttons" unique_id=1023695305]
+offset_left = 465.0
+offset_top = 21.0
+offset_right = 571.0
+offset_bottom = 86.0
+focus_mode = 0
+text = "ABUUUUUU"
+autowrap_mode = 1
+language = "pt"
+script = ExtResource("3_3n873")
+action_name = "left"
+
+[node name="upb" type="Button" parent="Buttons" unique_id=1729753534]
+offset_left = 655.0
+offset_top = 21.0
+offset_right = 761.0
+offset_bottom = 86.0
+focus_mode = 0
+text = "ABUUUUUU"
+autowrap_mode = 1
+language = "pt"
+script = ExtResource("3_3n873")
+action_name = "up"
+
+[node name="exb" type="Button" parent="Buttons" unique_id=363414353]
+offset_left = 851.0
+offset_top = 23.0
+offset_right = 957.0
+offset_bottom = 88.0
+focus_mode = 0
+text = "ABUUUUUU"
+autowrap_mode = 1
+language = "pt"
+script = ExtResource("3_3n873")
+action_name = "B move"
+
+[node name="down" type="Button" parent="Buttons" unique_id=208052470]
+offset_left = 655.0
+offset_top = 92.0
+offset_right = 761.0
+offset_bottom = 157.0
+focus_mode = 0
+text = "ABUUUUUU"
+autowrap_mode = 1
+language = "pt"
+script = ExtResource("3_3n873")
+action_name = "down"
+
+[node name="dashl" type="Label" parent="Buttons" unique_id=1077373804]
+offset_left = 963.0
+offset_top = 112.0
+offset_right = 1027.0
+offset_bottom = 137.0
+text = "DASH ="
+label_settings = SubResource("LabelSettings_kdq2s")
+horizontal_alignment = 2
+
+[node name="shootl" type="Label" parent="Buttons" unique_id=1046474398]
+offset_left = 196.0
+offset_top = 44.0
+offset_right = 270.0
+offset_bottom = 69.0
+text = "SHOOT ="
+label_settings = SubResource("LabelSettings_kdq2s")
+horizontal_alignment = 2
+
+[node name="aiml" type="Label" parent="Buttons" unique_id=262027102]
+offset_left = 203.0
+offset_top = 114.0
+offset_right = 272.0
+offset_bottom = 139.0
+text = "AIM ="
+label_settings = SubResource("LabelSettings_kdq2s")
+horizontal_alignment = 2
+
+[node name="jumpl" type="Label" parent="Buttons" unique_id=861730576]
+offset_left = 965.0
+offset_top = 46.0
+offset_right = 1029.0
+offset_bottom = 71.0
+text = "JUMP ="
+label_settings = SubResource("LabelSettings_kdq2s")
+horizontal_alignment = 2
+
+[node name="rightl" type="Label" parent="Buttons" unique_id=142069605]
+offset_left = 396.0
+offset_top = 114.0
+offset_right = 464.0
+offset_bottom = 139.0
+text = "RIGHT ="
+label_settings = SubResource("LabelSettings_kdq2s")
+horizontal_alignment = 2
+
+[node name="upl" type="Label" parent="Buttons" unique_id=115612181]
+offset_left = 588.0
+offset_top = 45.0
+offset_right = 657.0
+offset_bottom = 70.0
+text = "UP ="
+label_settings = SubResource("LabelSettings_kdq2s")
+horizontal_alignment = 2
+
+[node name="exl" type="Label" parent="Buttons" unique_id=1858912009]
+offset_left = 781.0
+offset_top = 43.0
+offset_right = 850.0
+offset_bottom = 68.0
+text = "EX ="
+label_settings = SubResource("LabelSettings_kdq2s")
+horizontal_alignment = 2
+
+[node name="downl" type="Label" parent="Buttons" unique_id=845306946]
+offset_left = 587.0
+offset_top = 116.0
+offset_right = 656.0
+offset_bottom = 141.0
+text = "DOWN ="
+label_settings = SubResource("LabelSettings_kdq2s")
+horizontal_alignment = 2
+
+[node name="leftl" type="Label" parent="Buttons" unique_id=2058521272]
+offset_left = 400.0
+offset_top = 43.0
+offset_right = 464.0
+offset_bottom = 68.0
+text = "LEFT ="
+label_settings = SubResource("LabelSettings_kdq2s")
+horizontal_alignment = 2
+
+[node name="OptionButton" type="OptionButton" parent="Buttons" unique_id=993544990]
+offset_left = 6.0
+offset_top = 73.0
+offset_right = 157.0
+offset_bottom = 121.0
+focus_mode = 0
+keep_pressed_outside = true
+item_count = 4
+popup/item_0/text = "None"
+popup/item_0/id = 0
+popup/item_1/text = "Super1"
+popup/item_1/id = 1
+popup/item_2/text = "Super2"
+popup/item_2/id = 2
+popup/item_3/text = "Super3"
+popup/item_3/id = 3
+popup/item_3/disabled = true
+script = ExtResource("10_nu6al")
+
+[node name="Superselect" type="Label" parent="Buttons/OptionButton" unique_id=1146289054]
+layout_mode = 0
+offset_top = -26.0
+offset_right = 153.0
+offset_bottom = 1.0
+text = "Super Selector"
+label_settings = SubResource("LabelSettings_6s2c6")
+horizontal_alignment = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1293286252]
+
+[node name="Fighttext" parent="CanvasLayer" unique_id=526630804 instance=ExtResource("10_sm5jj")]
+z_index = 10
+animation = &"knockout"
+
+[connection signal="pressed" from="Buttons/dashb" to="Buttons/dashb" method="_on_pressed"]
+[connection signal="pressed" from="Buttons/jumpb" to="Buttons/jumpb" method="_on_pressed"]
+[connection signal="pressed" from="Buttons/aimb" to="Buttons/aimb" method="_on_pressed"]
+[connection signal="pressed" from="Buttons/shootb" to="Buttons/shootb" method="_on_pressed"]
+[connection signal="pressed" from="Buttons/rightb" to="Buttons/rightb" method="_on_pressed"]
+[connection signal="pressed" from="Buttons/leftb" to="Buttons/leftb" method="_on_pressed"]
+[connection signal="pressed" from="Buttons/upb" to="Buttons/upb" method="_on_pressed"]
+[connection signal="pressed" from="Buttons/exb" to="Buttons/exb" method="_on_pressed"]
+[connection signal="pressed" from="Buttons/down" to="Buttons/down" method="_on_pressed"]
+[connection signal="item_selected" from="Buttons/OptionButton" to="Buttons/OptionButton" method="_on_item_selected"]

@@ -1,0 +1,147 @@
+[gd_scene format=3 uid="uid://cyhepldkidt7m"]
+
+[ext_resource type="Script" uid="uid://t86wnqp3msou" path="res://Scripts/hud/mobile_hud.gd" id="1_akrr4"]
+[ext_resource type="Script" uid="uid://7cb4417kdysk" path="res://addons/virtual_joystick/virtual_joystick.gd" id="1_jifs0"]
+[ext_resource type="Texture2D" uid="uid://csguxrsi46i6r" path="res://Assets/Mobile/Hud/Jump Button.png" id="2_4odmk"]
+[ext_resource type="Texture2D" uid="uid://cosgqsg4kytoc" path="res://Assets/Mobile/Hud/gamepad/joystick_base_outline.png" id="2_5y4ub"]
+[ext_resource type="Texture2D" uid="uid://dmqihqg6lnbga" path="res://Assets/Mobile/Hud/gamepad/joystick_tip.png" id="3_qc1ja"]
+[ext_resource type="Texture2D" uid="uid://bhjn1gwjiqbll" path="res://Assets/Mobile/Hud/aim button.png" id="5_jdnxn"]
+[ext_resource type="Texture2D" uid="uid://b07pk686d1awe" path="res://Assets/Mobile/Hud/Exmove button.png" id="5_r3xvn"]
+[ext_resource type="Texture2D" uid="uid://k2km20xny8uk" path="res://Assets/Mobile/Hud/Shoot.png" id="6_5y4ub"]
+[ext_resource type="Texture2D" uid="uid://bm0lk0r8b2rgs" path="res://Assets/Mobile/Hud/dash.png" id="7_qc1ja"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5y4ub"]
+radius = 89.53
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qc1ja"]
+radius = 91.3
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r3xvn"]
+radius = 89.53
+
+[node name="Mobile_HUD" type="CanvasLayer" unique_id=996118429]
+script = ExtResource("1_akrr4")
+
+[node name="Control" type="Control" parent="." unique_id=328845056]
+modulate = Color(1, 1, 1, 0.13333334)
+z_index = 10
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 679.0
+
+[node name="Virtual Joystick" type="Control" parent="Control" unique_id=1554415470]
+layout_mode = 1
+anchor_top = 0.536
+anchor_right = 0.26000002
+anchor_bottom = 1.0
+offset_top = 0.20773315
+offset_right = 0.47998047
+grow_vertical = 0
+script = ExtResource("1_jifs0")
+joystick_mode = 1
+use_input_actions = false
+
+[node name="Base" type="TextureRect" parent="Control/Virtual Joystick" unique_id=246276608]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(100, 100)
+mouse_force_pass_scroll_events = false
+texture = ExtResource("2_5y4ub")
+stretch_mode = 5
+
+[node name="Tip" type="TextureRect" parent="Control/Virtual Joystick/Base" unique_id=1326570649]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(50, 50)
+texture = ExtResource("3_qc1ja")
+stretch_mode = 5
+
+[node name="Jump" type="TouchScreenButton" parent="Control" unique_id=2023815177]
+position = Vector2(918.00006, 439)
+texture_normal = ExtResource("2_4odmk")
+shape = SubResource("CircleShape2D_5y4ub")
+action = "jump"
+
+[node name="Bex" type="TouchScreenButton" parent="Control" unique_id=1170106281]
+position = Vector2(913.00006, 309)
+scale = Vector2(0.625, 0.625)
+texture_normal = ExtResource("5_r3xvn")
+shape = SubResource("CircleShape2D_5y4ub")
+action = "B move"
+
+[node name="changeshoot" type="TouchScreenButton" parent="Control" unique_id=1280718256]
+visible = false
+position = Vector2(802, 219)
+scale = Vector2(0.625, 0.625)
+texture_normal = ExtResource("5_r3xvn")
+shape = SubResource("CircleShape2D_5y4ub")
+
+[node name="pause" type="TouchScreenButton" parent="Control" unique_id=404846162]
+visible = false
+scale = Vector2(0.625, 0.625)
+texture_normal = ExtResource("5_r3xvn")
+shape = SubResource("CircleShape2D_5y4ub")
+
+[node name="aim" type="TouchScreenButton" parent="Control" unique_id=727828256]
+position = Vector2(775, 538)
+scale = Vector2(0.56500006, 0.56500006)
+texture_normal = ExtResource("5_jdnxn")
+shape = SubResource("CircleShape2D_qc1ja")
+action = "aim"
+
+[node name="shoot" type="TouchScreenButton" parent="Control" unique_id=598301083]
+position = Vector2(776, 370)
+scale = Vector2(0.7999998, 0.7999998)
+texture_normal = ExtResource("6_5y4ub")
+shape = SubResource("CircleShape2D_r3xvn")
+action = "shoot"
+
+[node name="dash" type="TouchScreenButton" parent="Control" unique_id=769215201]
+position = Vector2(1039, 327)
+scale = Vector2(0.5549999, 0.5549999)
+texture_normal = ExtResource("7_qc1ja")
+shape = SubResource("CircleShape2D_r3xvn")
+action = "dash"
+
+[node name="SliderTamanho" type="HSlider" parent="Control" unique_id=1934151653]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 10.0
+offset_right = 16.0
+offset_bottom = 26.0
+min_value = 0.5
+max_value = 2.0
+step = 0.05
+value = 1.0
+
+[node name="SliderOpacidade" type="HSlider" parent="Control" unique_id=1422367975]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 29.0
+offset_right = 17.0
+offset_bottom = 45.0
+min_value = 0.5
+max_value = 2.0
+step = 0.05
+value = 1.0

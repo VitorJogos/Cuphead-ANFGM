@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://c2apfbil6xk7v"]
+
+[ext_resource type="Texture2D" uid="uid://baqmq0isad6pt" path="res://Assets/test/parry/ch_charm_parry_attack_spark_0001.png" id="1_xm8fi"]
+[ext_resource type="Texture2D" uid="uid://c0q5h3df6a24t" path="res://Assets/test/parry/ch_charm_parry_attack_spark_0002.png" id="2_64acu"]
+[ext_resource type="Script" uid="uid://cqlmwwrtug3b3" path="res://Scripts/Player/objremove.gd" id="2_bic5t"]
+[ext_resource type="Texture2D" uid="uid://bid1vwt1afewy" path="res://Assets/test/parry/ch_charm_parry_attack_spark_0003.png" id="3_mhgst"]
+[ext_resource type="Texture2D" uid="uid://chsli8jjsyxta" path="res://Assets/test/parry/ch_charm_parry_attack_spark_0004.png" id="4_l177r"]
+[ext_resource type="Texture2D" uid="uid://ciyyubhmy1pby" path="res://Assets/test/parry/ch_charm_parry_attack_spark_0005.png" id="5_881pa"]
+[ext_resource type="Texture2D" uid="uid://btkm213xj0oha" path="res://Assets/test/parry/nrml/cuphead_slap_spark_0001.png" id="6_fg54k"]
+[ext_resource type="Texture2D" uid="uid://cm4277eji71uc" path="res://Assets/test/parry/nrml/cuphead_slap_spark_0002.png" id="7_wwxm8"]
+[ext_resource type="Texture2D" uid="uid://dlt6hpwfm8xto" path="res://Assets/test/parry/nrml/cuphead_slap_spark_0003.png" id="8_20sqi"]
+[ext_resource type="Texture2D" uid="uid://cr53gcq334h6b" path="res://Assets/test/parry/nrml/cuphead_slap_spark_0004.png" id="9_knu77"]
+[ext_resource type="Texture2D" uid="uid://dnx8sg632guau" path="res://Assets/test/parry/nrml/cuphead_slap_spark_0005.png" id="10_ggj1i"]
+[ext_resource type="Texture2D" uid="uid://c2ur7kjt8s7f6" path="res://Assets/test/parry/nrml/cuphead_slap_spark_0006.png" id="11_1css4"]
+[ext_resource type="Texture2D" uid="uid://btr5qngjfwxc1" path="res://Assets/test/parry/nrml/cuphead_slap_spark_0007.png" id="12_1m1ap"]
+[ext_resource type="Texture2D" uid="uid://cg77c3jk3qtp8" path="res://Assets/test/parry/nrml/cuphead_slap_spark_0008.png" id="13_17eww"]
+[ext_resource type="Texture2D" uid="uid://dkmt7f0pr2i4w" path="res://Assets/test/parry/nrml/cuphead_slap_spark_0009.png" id="14_wsox8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i0nei"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xm8fi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_64acu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mhgst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_l177r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_881pa")
+}],
+"loop": false,
+"name": &"axe",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_fg54k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wwxm8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_20sqi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_knu77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ggj1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1css4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_1m1ap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_17eww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_wsox8")
+}],
+"loop": false,
+"name": &"normal",
+"speed": 24.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" unique_id=1042088641]
+top_level = true
+z_index = 1
+sprite_frames = SubResource("SpriteFrames_i0nei")
+animation = &"normal"
+frame = 8
+frame_progress = 1.0
+script = ExtResource("2_bic5t")

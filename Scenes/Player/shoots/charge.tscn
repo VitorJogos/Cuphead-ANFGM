@@ -1,0 +1,499 @@
+[gd_scene format=3 uid="uid://bq4wh4in0dycn"]
+
+[ext_resource type="Script" uid="uid://vd6d78bw8l0s" path="res://Scripts/Player/peashooter.gd" id="1_gppfg"]
+[ext_resource type="Texture2D" uid="uid://dvivf46q10o42" path="res://Assets/shoots/charge/weapon_charge_large_death_0001.png" id="2_0abgs"]
+[ext_resource type="Texture2D" uid="uid://ckjidn8ogl4js" path="res://Assets/shoots/charge/weapon_charge_large_death_0002.png" id="3_g3tt8"]
+[ext_resource type="Texture2D" uid="uid://d2gvsru6txqtr" path="res://Assets/shoots/charge/weapon_charge_large_death_0003.png" id="4_rv6mq"]
+[ext_resource type="Texture2D" uid="uid://b8ei5qpahlslh" path="res://Assets/shoots/charge/weapon_charge_large_death_0004.png" id="5_yft2q"]
+[ext_resource type="Texture2D" uid="uid://ms30hmf52g2g" path="res://Assets/shoots/charge/weapon_charge_large_death_0005.png" id="6_5wbob"]
+[ext_resource type="Texture2D" uid="uid://cvdk0vmnwyys4" path="res://Assets/shoots/charge/weapon_charge_large_death_0006.png" id="7_qhyds"]
+[ext_resource type="Texture2D" uid="uid://db1c8ncaqv8mt" path="res://Assets/shoots/charge/weapon_charge_large_intro_0001.png" id="8_b7g7j"]
+[ext_resource type="Texture2D" uid="uid://da6w60igrs3la" path="res://Assets/shoots/charge/weapon_charge_large_death_0007.png" id="8_rkjwk"]
+[ext_resource type="Texture2D" uid="uid://b841f2fh1ing4" path="res://Assets/shoots/charge/weapon_charge_large_intro_0002.png" id="9_n6jkj"]
+[ext_resource type="Texture2D" uid="uid://cfhcx1isxnsit" path="res://Assets/shoots/charge/weapon_charge_large_death_0008.png" id="9_sxfu4"]
+[ext_resource type="Texture2D" uid="uid://cpnou771detho" path="res://Assets/shoots/charge/weapon_charge_large_death_0009.png" id="10_2ecw2"]
+[ext_resource type="Texture2D" uid="uid://br8siflma3vch" path="res://Assets/shoots/charge/weapon_charge_large_intro_0003.png" id="10_5vpt4"]
+[ext_resource type="Texture2D" uid="uid://dmfh2hcm7h81q" path="res://Assets/shoots/charge/weapon_charge_large_loop_0001.png" id="11_p3xhl"]
+[ext_resource type="Texture2D" uid="uid://dluda17r1x01q" path="res://Assets/shoots/charge/weapon_charge_large_death_0010.png" id="11_xj5ed"]
+[ext_resource type="Texture2D" uid="uid://dy7kkbjd0fqnm" path="res://Assets/shoots/charge/weapon_charge_large_loop_0002.png" id="12_uaowi"]
+[ext_resource type="Texture2D" uid="uid://d4dps8fssfrgv" path="res://Assets/shoots/charge/weapon_charge_large_death_0011.png" id="12_wdcya"]
+[ext_resource type="Texture2D" uid="uid://2wih7p3wv1ob" path="res://Assets/shoots/charge/weapon_charge_large_loop_0003.png" id="13_2qbuv"]
+[ext_resource type="Texture2D" uid="uid://b0d4movk1wxsx" path="res://Assets/shoots/charge/weapon_charge_large_death_0012.png" id="13_35m7t"]
+[ext_resource type="Texture2D" uid="uid://cibmlap1vpyy6" path="res://Assets/shoots/charge/weapon_charge_large_loop_0004.png" id="14_3idgh"]
+[ext_resource type="Texture2D" uid="uid://th2xauo2pvkv" path="res://Assets/shoots/charge/weapon_charge_large_death_0013.png" id="14_oelrk"]
+[ext_resource type="Texture2D" uid="uid://eqaefs6mqpjj" path="res://Assets/shoots/charge/weapon_charge_large_loop_0005.png" id="15_0abgs"]
+[ext_resource type="AudioStream" uid="uid://chqp6oft6bv1v" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_01.wav" id="15_g3tt8"]
+[ext_resource type="Texture2D" uid="uid://bfk4gjmgfgeoq" path="res://Assets/shoots/charge/weapon_charge_death_0001.png" id="15_rkjwk"]
+[ext_resource type="Texture2D" uid="uid://b1h2nsfcmw6mq" path="res://Assets/shoots/charge/weapon_charge_large_loop_0006.png" id="16_g3tt8"]
+[ext_resource type="AudioStream" uid="uid://bxq1304374bl2" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_02.wav" id="16_rv6mq"]
+[ext_resource type="Texture2D" uid="uid://caxn7g8aobk8e" path="res://Assets/shoots/charge/weapon_charge_death_0002.png" id="16_sxfu4"]
+[ext_resource type="Texture2D" uid="uid://ddj5jtk2psu1r" path="res://Assets/shoots/charge/weapon_charge_death_0003.png" id="17_2ecw2"]
+[ext_resource type="Texture2D" uid="uid://dmnf33icn7u04" path="res://Assets/shoots/charge/weapon_charge_large_loop_0007.png" id="17_rv6mq"]
+[ext_resource type="AudioStream" uid="uid://cejqpt0djy5ge" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_03.wav" id="17_yft2q"]
+[ext_resource type="AudioStream" uid="uid://c0i1msgdfn0ej" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_04.wav" id="18_5wbob"]
+[ext_resource type="Texture2D" uid="uid://c1kna8ltlgrq4" path="res://Assets/shoots/charge/weapon_charge_death_0004.png" id="18_xj5ed"]
+[ext_resource type="Texture2D" uid="uid://e5nyde475k7n" path="res://Assets/shoots/charge/weapon_charge_large_loop_0008.png" id="18_yft2q"]
+[ext_resource type="Texture2D" uid="uid://bgumuhvla7uux" path="res://Assets/shoots/charge/weapon_charge_large_loop_0009.png" id="19_5wbob"]
+[ext_resource type="AudioStream" uid="uid://caiui7xafr02w" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_05.wav" id="19_qhyds"]
+[ext_resource type="Texture2D" uid="uid://dyggih7nw6n5m" path="res://Assets/shoots/charge/weapon_charge_death_0005.png" id="19_wdcya"]
+[ext_resource type="Texture2D" uid="uid://8put4he0ywab" path="res://Assets/shoots/charge/weapon_charge_death_0006.png" id="20_35m7t"]
+[ext_resource type="Texture2D" uid="uid://cirrqpaqoujs2" path="res://Assets/shoots/charge/weapon_charge_large_loop_0010.png" id="20_qhyds"]
+[ext_resource type="AudioStream" uid="uid://cinx3ohwgp8i8" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_06.wav" id="20_rkjwk"]
+[ext_resource type="AudioStream" uid="uid://dbnjykshm5axa" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_07.wav" id="21_sxfu4"]
+[ext_resource type="AudioStream" uid="uid://db83b3mvdqhh" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_08.wav" id="22_2ecw2"]
+[ext_resource type="AudioStream" uid="uid://bim5tx2etpmt2" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_09.wav" id="23_xj5ed"]
+[ext_resource type="AudioStream" uid="uid://br1g6xsvnuwpw" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_10.wav" id="24_wdcya"]
+[ext_resource type="AudioStream" uid="uid://daqqsc3d5rj5m" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_11.wav" id="25_35m7t"]
+[ext_resource type="AudioStream" uid="uid://4uwaw251otiy" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_12.wav" id="26_oelrk"]
+[ext_resource type="AudioStream" uid="uid://mbttgh86ljj8" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_13.wav" id="27_ps2ob"]
+[ext_resource type="AudioStream" uid="uid://car73gj6ejmcn" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_14.wav" id="28_is1r1"]
+[ext_resource type="AudioStream" uid="uid://b3y88r1edavj5" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_15.wav" id="29_pya0k"]
+[ext_resource type="AudioStream" uid="uid://cmhbbvhrkf0rm" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_16.wav" id="30_3dnp3"]
+[ext_resource type="Texture2D" uid="uid://dbxejwpgq112y" path="res://Assets/shoots/charge/weapon_charge_loop_0001.png" id="34_is1r1"]
+[ext_resource type="Texture2D" uid="uid://c78kyi86x2la7" path="res://Assets/shoots/charge/weapon_charge_loop_0002.png" id="35_pya0k"]
+[ext_resource type="Texture2D" uid="uid://dn8dlkqwsnbu4" path="res://Assets/shoots/charge/weapon_charge_loop_0003.png" id="36_3dnp3"]
+[ext_resource type="Texture2D" uid="uid://nm8vhibxjkio" path="res://Assets/shoots/charge/weapon_charge_loop_0004.png" id="37_joyxf"]
+[ext_resource type="Texture2D" uid="uid://6hvu8odegv1a" path="res://Assets/shoots/charge/weapon_charge_loop_0005.png" id="38_yrsf0"]
+[ext_resource type="Texture2D" uid="uid://cbeny07g7tpps" path="res://Assets/shoots/charge/weapon_charge_loop_0006.png" id="39_024c6"]
+[ext_resource type="Texture2D" uid="uid://d2dx3thj4bype" path="res://Assets/shoots/charge/weapon_charge_loop_0007.png" id="40_y1ryn"]
+[ext_resource type="Texture2D" uid="uid://buoncebcuqam1" path="res://Assets/shoots/charge/weapon_charge_loop_0008.png" id="41_od0e4"]
+[ext_resource type="AudioStream" uid="uid://dx22cpdqa24xg" path="res://Audios/Cuphead/Shoots/Charge/sfx_player_weapon_charge_full_fireball_01.wav" id="58_joyxf"]
+[ext_resource type="AudioStream" uid="uid://d3j6ucdp2f6fa" path="res://Audios/Cuphead/Shoots/Charge/sfx_player_weapon_charge_full_fireball_02.wav" id="59_yrsf0"]
+[ext_resource type="AudioStream" uid="uid://juqykitp5n8r" path="res://Audios/Cuphead/Shoots/Charge/sfx_player_weapon_charge_full_fireball_03.wav" id="60_024c6"]
+[ext_resource type="AudioStream" uid="uid://fhl3bxw34fs1" path="res://Audios/Cuphead/Shoots/Charge/sfx_player_weapon_charge_full_impact_01.wav" id="61_y1ryn"]
+[ext_resource type="AudioStream" uid="uid://bdadouqnla01y" path="res://Audios/Cuphead/Shoots/Charge/sfx_player_weapon_charge_full_impact_02.wav" id="62_od0e4"]
+[ext_resource type="AudioStream" uid="uid://btd5q6v44akt2" path="res://Audios/Cuphead/Shoots/Charge/sfx_player_weapon_charge_full_impact_03.wav" id="63_5pidw"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2weig"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0abgs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_g3tt8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rv6mq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_yft2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5wbob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qhyds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rkjwk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_sxfu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_2ecw2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_xj5ed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wdcya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_35m7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_oelrk")
+}],
+"loop": false,
+"name": &"death",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_rkjwk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_sxfu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_2ecw2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_xj5ed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_wdcya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_35m7t")
+}],
+"loop": false,
+"name": &"death_l",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_b7g7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_n6jkj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5vpt4")
+}],
+"loop": false,
+"name": &"intro_a",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_b7g7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_n6jkj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5vpt4")
+}],
+"loop": false,
+"name": &"intro_b",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"intro_l",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_p3xhl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_uaowi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_2qbuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_3idgh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_0abgs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_g3tt8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_rv6mq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_yft2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_5wbob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_qhyds")
+}],
+"loop": true,
+"name": &"main",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("34_is1r1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_pya0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_3dnp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_joyxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_yrsf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_024c6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_y1ryn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_od0e4")
+}],
+"loop": true,
+"name": &"main_l",
+"speed": 24.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tsonu"]
+size = Vector2(164, 91)
+
+[sub_resource type="Animation" id="Animation_is1r1"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:shape")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("RectangleShape2D_tsonu")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2.115, 0.5)]
+}
+
+[sub_resource type="Animation" id="Animation_pya0k"]
+resource_name = "normal"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:shape")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("RectangleShape2D_tsonu")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.68, 0.415)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(40.03, 0.08)]
+}
+
+[sub_resource type="Animation" id="Animation_3dnp3"]
+resource_name = "small"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape2D:shape")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("RectangleShape2D_tsonu")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.385, 0.215)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_joyxf"]
+_data = {
+&"RESET": SubResource("Animation_is1r1"),
+&"normal": SubResource("Animation_pya0k"),
+&"small": SubResource("Animation_3dnp3")
+}
+
+[node name="Charge" type="Area2D" unique_id=573293350]
+top_level = true
+script = ExtResource("1_gppfg")
+dano = 38
+shoot = 5
+speed = 1200
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2035019207]
+sprite_frames = SubResource("SpriteFrames_2weig")
+animation = &"intro_b"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=90220055]
+position = Vector2(2.115, 0.5)
+shape = SubResource("RectangleShape2D_tsonu")
+
+[node name="Timer" type="Timer" parent="." unique_id=1371026107]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="Colided1" type="AudioStreamPlayer2D" parent="." unique_id=1290694522]
+stream = ExtResource("15_g3tt8")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided2" type="AudioStreamPlayer2D" parent="." unique_id=743022011]
+stream = ExtResource("16_rv6mq")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided3" type="AudioStreamPlayer2D" parent="." unique_id=790061946]
+stream = ExtResource("17_yft2q")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided4" type="AudioStreamPlayer2D" parent="." unique_id=1393291379]
+stream = ExtResource("18_5wbob")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided5" type="AudioStreamPlayer2D" parent="." unique_id=1589634694]
+stream = ExtResource("19_qhyds")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided6" type="AudioStreamPlayer2D" parent="." unique_id=1308899269]
+stream = ExtResource("20_rkjwk")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided7" type="AudioStreamPlayer2D" parent="." unique_id=17164425]
+stream = ExtResource("21_sxfu4")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided8" type="AudioStreamPlayer2D" parent="." unique_id=1804499562]
+stream = ExtResource("22_2ecw2")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided9" type="AudioStreamPlayer2D" parent="." unique_id=1125964322]
+stream = ExtResource("23_xj5ed")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided10" type="AudioStreamPlayer2D" parent="." unique_id=1025036779]
+stream = ExtResource("24_wdcya")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided11" type="AudioStreamPlayer2D" parent="." unique_id=1160517745]
+stream = ExtResource("25_35m7t")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided12" type="AudioStreamPlayer2D" parent="." unique_id=267660879]
+stream = ExtResource("26_oelrk")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided13" type="AudioStreamPlayer2D" parent="." unique_id=203465462]
+stream = ExtResource("27_ps2ob")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided14" type="AudioStreamPlayer2D" parent="." unique_id=1860297594]
+stream = ExtResource("28_is1r1")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided15" type="AudioStreamPlayer2D" parent="." unique_id=650471693]
+stream = ExtResource("29_pya0k")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided16" type="AudioStreamPlayer2D" parent="." unique_id=234276106]
+stream = ExtResource("30_3dnp3")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=116905129]
+libraries/ = SubResource("AnimationLibrary_joyxf")
+
+[node name="huge_1" type="AudioStreamPlayer2D" parent="." unique_id=857987937]
+stream = ExtResource("58_joyxf")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="huge_2" type="AudioStreamPlayer2D" parent="." unique_id=2126390299]
+stream = ExtResource("59_yrsf0")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="huge_3" type="AudioStreamPlayer2D" parent="." unique_id=89119112]
+stream = ExtResource("60_024c6")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="impacth_1" type="AudioStreamPlayer2D" parent="." unique_id=2003313637]
+stream = ExtResource("61_y1ryn")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="impacth_2" type="AudioStreamPlayer2D" parent="." unique_id=929459549]
+stream = ExtResource("62_od0e4")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="impacth_3" type="AudioStreamPlayer2D" parent="." unique_id=128291087]
+stream = ExtResource("63_5pidw")
+volume_db = -10.0
+bus = &"SFX"
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

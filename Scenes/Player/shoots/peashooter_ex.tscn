@@ -1,0 +1,199 @@
+[gd_scene format=3 uid="uid://c2u6yv1qb4bo3"]
+
+[ext_resource type="Script" uid="uid://vd6d78bw8l0s" path="res://Scripts/Player/peashooter.gd" id="1_bpv6i"]
+[ext_resource type="Texture2D" uid="uid://cnulpddgbc7ra" path="res://Assets/shoots/peashooter/ex/death/weapon_peashot_ex_death_0001.png" id="2_w7tk8"]
+[ext_resource type="Texture2D" uid="uid://dk7h77y7eisx4" path="res://Assets/shoots/peashooter/ex/death/weapon_peashot_ex_death_0002.png" id="3_52ula"]
+[ext_resource type="Texture2D" uid="uid://ducjn1g0mfhkj" path="res://Assets/shoots/peashooter/ex/death/weapon_peashot_ex_death_0003.png" id="4_h3kps"]
+[ext_resource type="Texture2D" uid="uid://cg80eey7kwk6x" path="res://Assets/shoots/peashooter/ex/death/weapon_peashot_ex_death_0004.png" id="5_wqi1r"]
+[ext_resource type="Texture2D" uid="uid://cnmqkrc2216lj" path="res://Assets/shoots/peashooter/ex/death/weapon_peashot_ex_death_0005.png" id="6_b15r1"]
+[ext_resource type="Texture2D" uid="uid://c7p1te5r8u7sw" path="res://Assets/shoots/peashooter/ex/death/weapon_peashot_EX_death_0006.png" id="7_ybol8"]
+[ext_resource type="Texture2D" uid="uid://dtwl2alhpwydd" path="res://Assets/shoots/peashooter/ex/death/weapon_peashot_EX_death_0007.png" id="8_giu8l"]
+[ext_resource type="Texture2D" uid="uid://dj8g5g5w3wyy1" path="res://Assets/shoots/peashooter/ex/death/weapon_peashot_EX_death_0008.png" id="9_6b7b4"]
+[ext_resource type="Texture2D" uid="uid://bs3wr0ngesuok" path="res://Assets/shoots/peashooter/ex/death/weapon_peashot_EX_death_0009.png" id="10_tti48"]
+[ext_resource type="Texture2D" uid="uid://blmiqckxeexog" path="res://Assets/shoots/peashooter/ex/death/weapon_peashot_EX_death_00010.png" id="11_bpv6i"]
+[ext_resource type="Texture2D" uid="uid://xkjd482pc6th" path="res://Assets/shoots/peashooter/ex/weapon_peashot_EX_intro_0001.png" id="12_o1yuu"]
+[ext_resource type="Texture2D" uid="uid://ckvl5etpkc6rj" path="res://Assets/shoots/peashooter/ex/weapon_peashot_EX_intro_0002.png" id="13_8mu7s"]
+[ext_resource type="Texture2D" uid="uid://b4l6end443xp" path="res://Assets/shoots/peashooter/ex/weapon_peashot_EX_intro_0003.png" id="14_rysvj"]
+[ext_resource type="Texture2D" uid="uid://bepj5kfu1whpj" path="res://Assets/shoots/peashooter/ex/ex_main.png" id="15_w7tk8"]
+[ext_resource type="AudioStream" uid="uid://d0172g4xyshme" path="res://Audios/Cuphead/Shoots/ex/sfx_player_weapon_peashoot_ex_impact_01.wav" id="16_o1yuu"]
+[ext_resource type="AudioStream" uid="uid://wlpi6j88prkr" path="res://Audios/Cuphead/Shoots/ex/sfx_player_weapon_peashoot_ex_impact_02.wav" id="17_8mu7s"]
+[ext_resource type="AudioStream" uid="uid://srf2h7gixgca" path="res://Audios/Cuphead/Shoots/ex/sfx_player_weapon_peashoot_ex_impact_03.wav" id="18_rysvj"]
+[ext_resource type="AudioStream" uid="uid://55b24bhxhjgc" path="res://Audios/Cuphead/Shoots/ex/main/sfx_player_ex_forward_ground_01.wav" id="19_52ula"]
+[ext_resource type="AudioStream" uid="uid://c6qxcq5okkm7w" path="res://Audios/Cuphead/Shoots/ex/main/sfx_player_ex_forward_ground_02.wav" id="20_h3kps"]
+[ext_resource type="AudioStream" uid="uid://dkjxs7b7kuljj" path="res://Audios/Cuphead/Shoots/ex/main/sfx_player_ex_forward_ground_03.wav" id="21_wqi1r"]
+[ext_resource type="AudioStream" uid="uid://bo8on56g358fd" path="res://Audios/Cuphead/Shoots/ex/main/sfx_player_ex_forward_ground_04.wav" id="22_b15r1"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ybol8"]
+atlas = ExtResource("15_w7tk8")
+region = Rect2(0, 0, 469, 204)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_giu8l"]
+atlas = ExtResource("15_w7tk8")
+region = Rect2(469, 0, 469, 204)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6b7b4"]
+atlas = ExtResource("15_w7tk8")
+region = Rect2(938, 0, 469, 204)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tti48"]
+atlas = ExtResource("15_w7tk8")
+region = Rect2(1407, 0, 469, 204)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bpv6i"]
+atlas = ExtResource("15_w7tk8")
+region = Rect2(1876, 0, 469, 204)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yu84e"]
+atlas = ExtResource("15_w7tk8")
+region = Rect2(2345, 0, 469, 204)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0yfg0"]
+atlas = ExtResource("15_w7tk8")
+region = Rect2(2814, 0, 469, 204)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gam1s"]
+atlas = ExtResource("15_w7tk8")
+region = Rect2(3283, 0, 469, 204)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2weig"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_w7tk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_52ula")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_h3kps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wqi1r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_b15r1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ybol8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_giu8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_6b7b4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_tti48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_bpv6i")
+}],
+"loop": false,
+"name": &"death",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_o1yuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8mu7s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_rysvj")
+}],
+"loop": false,
+"name": &"intro",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ybol8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_giu8l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6b7b4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tti48")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bpv6i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yu84e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0yfg0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gam1s")
+}],
+"loop": true,
+"name": &"main",
+"speed": 24.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tsonu"]
+size = Vector2(87, 95)
+
+[node name="Peashooter" type="Area2D" unique_id=573293350]
+top_level = true
+script = ExtResource("1_bpv6i")
+dano = 8
+ex = true
+speed = 1000
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2035019207]
+sprite_frames = SubResource("SpriteFrames_2weig")
+animation = &"death"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=90220055 groups=["boss"]]
+position = Vector2(102.5, 1)
+shape = SubResource("RectangleShape2D_tsonu")
+
+[node name="Timer" type="Timer" parent="." unique_id=1371026107]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="Colided1" type="AudioStreamPlayer2D" parent="." unique_id=1290694522]
+stream = ExtResource("16_o1yuu")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided2" type="AudioStreamPlayer2D" parent="." unique_id=743022011]
+stream = ExtResource("17_8mu7s")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided3" type="AudioStreamPlayer2D" parent="." unique_id=790061946]
+stream = ExtResource("18_rysvj")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Start1" type="AudioStreamPlayer2D" parent="." unique_id=630807967]
+stream = ExtResource("19_52ula")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="Start2" type="AudioStreamPlayer2D" parent="." unique_id=1172078386]
+stream = ExtResource("20_h3kps")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="Start3" type="AudioStreamPlayer2D" parent="." unique_id=630079058]
+stream = ExtResource("21_wqi1r")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="Start4" type="AudioStreamPlayer2D" parent="." unique_id=503157659]
+stream = ExtResource("22_b15r1")
+volume_db = -10.0
+bus = &"SFX"
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

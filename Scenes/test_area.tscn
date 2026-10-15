@@ -1,0 +1,383 @@
+[gd_scene format=3 uid="uid://cptmkfcriwqtd"]
+
+[ext_resource type="Texture2D" uid="uid://mndi1ptam24i" path="res://icon.svg" id="1_15qo1"]
+[ext_resource type="PackedScene" uid="uid://7ia4sst1bbsd" path="res://Scenes/Player/player_1.tscn" id="2_kpu7f"]
+[ext_resource type="Script" uid="uid://c7lr86lbrdnls" path="res://Scripts/object/test/saco.gd" id="2_m0xqr"]
+[ext_resource type="Script" uid="uid://b4by2844qi2k8" path="res://Scripts/Scenes/touch_screen_button.gd" id="3_3n873"]
+[ext_resource type="Texture2D" uid="uid://cfuenlhic4gos" path="res://Assets/test/saco.png" id="3_ifqnq"]
+[ext_resource type="PackedScene" uid="uid://cuidh02sgetqm" path="res://Scenes/objects/test/parry.tscn" id="3_kbjuv"]
+[ext_resource type="FontFile" uid="uid://cuxplhjtsvjod" path="res://Fonts/CupheadVogue-ExtraBold #89098.ttf" id="3_msx0k"]
+[ext_resource type="PackedScene" uid="uid://chcf5p721yaqa" path="res://Scenes/HUD.tscn" id="5_bc04g"]
+[ext_resource type="FontFile" uid="uid://mrjsmv7bscca" path="res://Fonts/CupheadVogue-ExtraBold.ttf" id="10_kdq2s"]
+[ext_resource type="Script" uid="uid://y3jkd4hpoqeh" path="res://Scripts/Player/Superchoose.gd" id="10_nu6al"]
+[ext_resource type="PackedScene" uid="uid://dibcvon6ny6tc" path="res://Scenes/important/fighttext.tscn" id="10_sm5jj"]
+[ext_resource type="Texture2D" uid="uid://dafk5yll3xlla" path="res://Assets/Mobile/Hud/aim buttonactive.png" id="11_f4m3k"]
+[ext_resource type="Texture2D" uid="uid://bqlqmaefrufgr" path="res://Assets/Mobile/Hud/shooting.png" id="12_0u4ks"]
+[ext_resource type="PackedScene" uid="uid://03a667dx8h4t" path="res://Scenes/important/Pausemenu.tscn" id="13_6s2c6"]
+[ext_resource type="Texture2D" uid="uid://bsjjm4oe15d3x" path="res://Assets/test/dmg.png" id="13_xhu6h"]
+[ext_resource type="PackedScene" uid="uid://1cnja8mcwk85" path="res://Scenes/important/iris.tscn" id="16_0u4ks"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f4m3k"]
+size = Vector2(85.5, 82)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bc04g"]
+size = Vector2(1261, 197)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kbjuv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ifqnq")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_msx0k"]
+radius = 60.0
+height = 334.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_m0xqr"]
+font = ExtResource("3_msx0k")
+font_size = 29
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_sm5jj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Marker2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(877, 321)]
+}
+
+[sub_resource type="Animation" id="Animation_nu6al"]
+resource_name = "new_animation"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Marker2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.040000014, 0.1, 0.11, 0.16, 0.19999999),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(877, 321), Vector2(877, 321), Vector2(902, 35), Vector2(1001, 25), Vector2(1003, 337), Vector2(1049, 166)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kdq2s"]
+_data = {
+&"RESET": SubResource("Animation_sm5jj"),
+&"new_animation": SubResource("Animation_nu6al")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_6s2c6"]
+font = ExtResource("10_kdq2s")
+font_size = 22
+
+[sub_resource type="LabelSettings" id="LabelSettings_xhu6h"]
+font = ExtResource("10_kdq2s")
+font_size = 22
+
+[sub_resource type="LabelSettings" id="LabelSettings_f4m3k"]
+font = ExtResource("10_kdq2s")
+font_size = 22
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6s2c6"]
+size = Vector2(327.5, 1196)
+
+[node name="Test Area" type="Node2D" unique_id=301513000]
+
+[node name="Dmg" type="Area2D" parent="." unique_id=178870781 groups=["levar dano"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="Dmg" unique_id=579265643]
+position = Vector2(274, 322)
+scale = Vector2(0.3183593, 0.3183593)
+texture = ExtResource("13_xhu6h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dmg" unique_id=2143626446]
+position = Vector2(274.25, 322)
+shape = SubResource("RectangleShape2D_f4m3k")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1531183518]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D2" unique_id=271634372]
+position = Vector2(1225, 175.715)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_bc04g")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1444500402]
+position = Vector2(-121, 175.715)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_bc04g")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1428408906 groups=["chao"]]
+z_index = -2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=2033641808]
+position = Vector2(546.5, 650.5)
+shape = SubResource("RectangleShape2D_bc04g")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CollisionShape2D" unique_id=473875101]
+position = Vector2(13.499998, -1.335144e-05)
+scale = Vector2(10.156249, 1.585938)
+texture = ExtResource("1_15qo1")
+
+[node name="Saco" type="Area2D" parent="." unique_id=1309816246 groups=["boss", "dano"]]
+visibility_layer = 2
+z_index = -2
+position = Vector2(977, 169)
+script = ExtResource("2_m0xqr")
+saco = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Saco" unique_id=957385761]
+scale = Vector2(0.4871795, 0.4871795)
+sprite_frames = SubResource("SpriteFrames_kbjuv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Saco" unique_id=1013303485]
+shape = SubResource("CapsuleShape2D_msx0k")
+
+[node name="Label" type="Label" parent="Saco" unique_id=166792367]
+offset_left = -282.0
+offset_top = -21.0
+offset_right = -91.0
+offset_bottom = 19.0
+text = "HP - 0"
+label_settings = SubResource("LabelSettings_m0xqr")
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="Timer" type="Timer" parent="Saco" unique_id=809478704]
+wait_time = 4.0
+one_shot = true
+
+[node name="explosionap" type="AnimationPlayer" parent="Saco" unique_id=2108069900]
+libraries/ = SubResource("AnimationLibrary_kdq2s")
+autoplay = &"new_animation"
+
+[node name="Marker2D" type="Marker2D" parent="Saco" unique_id=2131073775]
+position = Vector2(877, 321)
+
+[node name="explodetiemr" type="Timer" parent="Saco" unique_id=2144057396]
+wait_time = 0.4
+one_shot = true
+
+[node name="parry" parent="." unique_id=458815001 instance=ExtResource("3_kbjuv")]
+z_index = -2
+position = Vector2(545, 326)
+
+[node name="Player1" parent="." unique_id=1893454799 instance=ExtResource("2_kpu7f")]
+position = Vector2(126, 488)
+
+[node name="HUD" parent="." unique_id=1198476980 instance=ExtResource("5_bc04g")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1293286252]
+
+[node name="Fighttext" parent="CanvasLayer" unique_id=526630804 instance=ExtResource("10_sm5jj")]
+z_index = 10
+animation = &"knockout"
+
+[node name="pausemenu" parent="." unique_id=772093746 instance=ExtResource("13_6s2c6")]
+visible = false
+
+[node name="Mobile_HUD" parent="pausemenu/Controls" parent_id_path=PackedInt32Array(772093746, 1703104149) index="18" unique_id=996118429]
+visible = true
+
+[node name="aim" parent="pausemenu/Controls/Mobile_HUD/Control" parent_id_path=PackedInt32Array(772093746, 996118429, 328845056) index="7" unique_id=727828256]
+texture_pressed = ExtResource("11_f4m3k")
+
+[node name="shoot" parent="pausemenu/Controls/Mobile_HUD/Control" parent_id_path=PackedInt32Array(772093746, 996118429, 328845056) index="8" unique_id=598301083]
+texture_pressed = ExtResource("12_0u4ks")
+
+[node name="SliderTamanho" parent="pausemenu/Controls/Mobile_HUD/Control" parent_id_path=PackedInt32Array(772093746, 996118429, 328845056) index="10" unique_id=1934151653]
+visible = false
+
+[node name="SliderOpacidade" parent="pausemenu/Controls/Mobile_HUD/Control" parent_id_path=PackedInt32Array(772093746, 996118429, 328845056) index="11" unique_id=1422367975]
+visible = false
+
+[node name="voltarbut" parent="pausemenu/Controls/Mobile_HUD/Control" parent_id_path=PackedInt32Array(772093746, 996118429, 328845056) index="12" unique_id=1671190179]
+visible = false
+
+[node name="Resetbut" parent="pausemenu/Controls/Mobile_HUD/Control" parent_id_path=PackedInt32Array(772093746, 996118429, 328845056) index="13" unique_id=1353846535]
+visible = false
+
+[node name="savebut" parent="pausemenu/Controls/Mobile_HUD/Control" parent_id_path=PackedInt32Array(772093746, 996118429, 328845056) index="14" unique_id=1335857661]
+visible = false
+
+[node name="Buttons" type="CanvasLayer" parent="." unique_id=644664437]
+process_mode = 3
+
+[node name="down" type="Button" parent="Buttons" unique_id=208052470]
+visible = false
+offset_left = 655.0
+offset_top = 92.0
+offset_right = 761.0
+offset_bottom = 157.0
+focus_mode = 0
+text = "ABUUUUUU"
+autowrap_mode = 1
+language = "pt"
+script = ExtResource("3_3n873")
+action_name = "down"
+
+[node name="OptionButton" type="OptionButton" parent="Buttons" unique_id=993544990]
+top_level = true
+offset_left = 6.0
+offset_top = 73.0
+offset_right = 177.0
+offset_bottom = 104.0
+focus_mode = 0
+keep_pressed_outside = true
+selected = 0
+item_count = 4
+popup/item_0/text = "None"
+popup/item_0/id = 0
+popup/item_1/text = "Super1"
+popup/item_1/id = 1
+popup/item_2/text = "Super2"
+popup/item_2/id = 2
+popup/item_3/text = "Super3"
+popup/item_3/id = 3
+script = ExtResource("10_nu6al")
+
+[node name="Superselect" type="Label" parent="Buttons/OptionButton" unique_id=1146289054]
+layout_mode = 0
+offset_top = -26.0
+offset_right = 153.0
+offset_bottom = 1.0
+text = "Super Selector"
+label_settings = SubResource("LabelSettings_6s2c6")
+
+[node name="OptionButton2" type="OptionButton" parent="Buttons" unique_id=1670865167]
+top_level = true
+offset_left = 4.0
+offset_top = 128.0
+offset_right = 175.0
+offset_bottom = 159.0
+focus_mode = 0
+keep_pressed_outside = true
+selected = 0
+item_count = 7
+popup/item_0/text = "None"
+popup/item_0/id = 0
+popup/item_1/text = "1hp"
+popup/item_1/id = 1
+popup/item_2/text = "2hp"
+popup/item_2/id = 2
+popup/item_3/text = "coffe"
+popup/item_3/id = 3
+popup/item_4/text = "Smoke Bomb"
+popup/item_4/id = 4
+popup/item_5/text = "axe"
+popup/item_5/id = 5
+popup/item_6/text = "sugar"
+popup/item_6/id = 6
+script = ExtResource("10_nu6al")
+idk = 1
+
+[node name="Superselect" type="Label" parent="Buttons/OptionButton2" unique_id=1940798030]
+layout_mode = 0
+offset_top = -26.0
+offset_right = 153.0
+offset_bottom = 1.0
+text = "Reliquia Select"
+label_settings = SubResource("LabelSettings_xhu6h")
+
+[node name="OptionButton3" type="OptionButton" parent="Buttons" unique_id=1689474842]
+top_level = true
+offset_left = 6.0
+offset_top = 187.0
+offset_right = 177.0
+offset_bottom = 218.0
+focus_mode = 0
+keep_pressed_outside = true
+selected = 0
+item_count = 6
+popup/item_0/text = "Peashooter"
+popup/item_0/id = 0
+popup/item_1/text = "Spread"
+popup/item_1/id = 1
+popup/item_2/text = "RoundaBount"
+popup/item_2/id = 2
+popup/item_3/text = "Homing"
+popup/item_3/id = 3
+popup/item_4/text = "Obus"
+popup/item_4/id = 4
+popup/item_5/text = "Charge"
+popup/item_5/id = 5
+script = ExtResource("10_nu6al")
+idk = 2
+
+[node name="Superselect" type="Label" parent="Buttons/OptionButton3" unique_id=1266748103]
+layout_mode = 0
+offset_top = -26.0
+offset_right = 153.0
+offset_bottom = 1.0
+text = "Shoots Select 1"
+label_settings = SubResource("LabelSettings_f4m3k")
+
+[node name="OptionButton4" type="OptionButton" parent="Buttons" unique_id=1919965860]
+top_level = true
+offset_left = 6.0
+offset_top = 244.73
+offset_right = 177.0
+offset_bottom = 275.7303
+focus_mode = 0
+keep_pressed_outside = true
+selected = 0
+item_count = 6
+popup/item_0/text = "Peashooter"
+popup/item_0/id = 0
+popup/item_1/text = "Spread"
+popup/item_1/id = 1
+popup/item_2/text = "RoundaBount"
+popup/item_2/id = 2
+popup/item_3/text = "Homing"
+popup/item_3/id = 3
+popup/item_4/text = "Obus"
+popup/item_4/id = 4
+popup/item_5/text = "Charge"
+popup/item_5/id = 5
+script = ExtResource("10_nu6al")
+idk = 3
+
+[node name="Superselect" type="Label" parent="Buttons/OptionButton4" unique_id=116249932]
+layout_mode = 0
+offset_top = -26.0
+offset_right = 153.0
+offset_bottom = 1.0
+text = "Shoots Select 2"
+label_settings = SubResource("LabelSettings_f4m3k")
+
+[node name="acertavel" type="Area2D" parent="." unique_id=233027656 groups=["atiravel"]]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="acertavel" unique_id=2079271098]
+position = Vector2(581, 754.75)
+rotation = -1.5707964
+shape = SubResource("RectangleShape2D_6s2c6")
+
+[node name="Iris" type="CanvasLayer" parent="." unique_id=102581555]
+
+[node name="Iris" parent="Iris" unique_id=667152222 instance=ExtResource("16_0u4ks")]
+z_index = 300
+animation = &"default"
+
+[connection signal="pressed" from="Buttons/down" to="Buttons/down" method="_on_pressed"]
+[connection signal="item_selected" from="Buttons/OptionButton" to="Buttons/OptionButton" method="_on_item_selected"]
+[connection signal="item_selected" from="Buttons/OptionButton2" to="Buttons/OptionButton2" method="_on_item_selected"]
+[connection signal="item_selected" from="Buttons/OptionButton3" to="Buttons/OptionButton3" method="_on_item_selected"]
+[connection signal="item_selected" from="Buttons/OptionButton4" to="Buttons/OptionButton4" method="_on_item_selected"]
+
+[editable path="pausemenu"]
+[editable path="pausemenu/Controls/Mobile_HUD"]

@@ -1,0 +1,104 @@
+id,pt,en
+RESUME,CONTINUAR,RESUME
+RETRY,TENTAR DE NOVO,RETRY
+OPTIONS,OPÇÕES,OPTIONS
+EXIT TO MAP,SAIR PARA O MAPA,EXIT TO MAP
+AUDIO,ÁUDIO,AUDIO
+CONTROLS,CONTROLES,CONTROLS
+LANGUAGE,IDIOMA,LANGUAGE
+BACK,VOLTAR,BACK
+AÇÕES,AÇÕES,ACTIONS
+TECLADO,TECLADO,KEYBOARD
+CONTROLE,CONTROLE,CONTROLLER
+CONTROLES,CONTROLES,CONTROLS
+Pronto,Pronto,Done
+Restaurar padrões,Restaurar padrões,Restore Defaults
+Vibração: SIM,Vibração: SIM,Vibration: ON
+Remover controle,Remover controle,Remove controller
+Remover,Remover,Remove
+Configurar o Hud Mobile,Configurar o Hud Mobile,Configure Mobile HUD
+Movimento horizontal,Movimento horizontal,Horizontal movement
+Movimento vertical,Movimento vertical,Vertical movement
+Direita,Direita,Right
+Esquerda,Esquerda,Left
+Cima,Cima,Up
+Baixo,Baixo,Down
+Pular,Pular,Jump
+Atirar,Atirar,Shoot
+Tiro EX,Tiro EX,EX Shot
+Trocar Arma,Trocar Arma,Switch Weapon
+Parar,Parar,Aim
+Correr,Correr,Dash
+Trocar,Trocar,Change
+Cancelar,Cancelar,Cancel
+Salvar,Salvar,Save
+Agora pressione um botão ou mova um eixo para defini-lo como,Agora pressione um botão ou mova um eixo para defini-lo como,Now press a button or move an axis to set it as
+Teclado,Teclado,Keyboard
+(nenhum perfil salvo),(nenhum perfil salvo),(no saved profile)
+# nome,# nome,# name
+Nome do perfil:,Nome do perfil:,Profile name:
+Nome inválido ou vazio!,Nome inválido ou vazio!,Invalid or empty name!
+Não foi possível salvar!,Não foi possível salvar!,Couldn't save!
+ex.: abobrinha123,ex.: abobrinha123,ex.: cuphead123
+Nenhum perfil salvo ainda,Nenhum perfil salvo ainda,No saved profile yet
+Nenhum perfil escolhido ainda,Nenhum perfil escolhido ainda,No profile chosen yet
+"Perfil ""%s"" carregado!","Perfil ""%s"" carregado!","Profile ""%s"" loaded!"
+"Não deu pra carregar ""%s""","Não deu pra carregar ""%s""","Couldn't load ""%s"""
+Digite um nome pro perfil,Digite um nome pro perfil,Type a name for the profile
+"Perfil ""%s"" salvo!","Perfil ""%s"" salvo!","Profile ""%s"" saved!"
+Não deu pra salvar o perfil,Não deu pra salvar o perfil,Couldn't save the profile
+"Escolha um perfil em ""Carregar config""","Escolha um perfil em ""Carregar config""","Choose a profile in ""Load config"""
+"Excluir ""%s""? Clique de novo pra confirmar","Excluir ""%s""? Clique de novo pra confirmar","Delete ""%s""? Click again to confirm"
+"Perfil ""%s"" excluído","Perfil ""%s"" excluído","Profile ""%s"" deleted"
+"Não deu pra excluir ""%s""","Não deu pra excluir ""%s""","Couldn't delete ""%s"""
+Up,Cima,Up
+Down,Baixo,Down
+Left,Esquerda,Left
+Right,Direita,Right
+Space,Espaço,Space
+Escape,Esc,Escape
+Page Up,Página acima,Page Up
+Page Down,Página abaixo,Page Down
+Botão,Botão,Button
+Botão A,Botão A,Button A
+Botão B,Botão B,Button B
+Botão X,Botão X,Button X
+Botão Y,Botão Y,Button Y
+Back / Select,Back / Select,Back / Select
+Guia / Home,Guia / Home,Guide / Home
+Start / Options,Start / Options,Start / Options
+L3 (Analógico Esq),L3 (Analógico Esq),L3 (Left Stick)
+R3 (Analógico Dir),R3 (Analógico Dir),R3 (Right Stick)
+L1 / LB,L1 / LB,L1 / LB
+R1 / RB,R1 / RB,R1 / RB
+D-Pad Cima,D-Pad Cima,D-Pad Up
+D-Pad Baixo,D-Pad Baixo,D-Pad Down
+D-Pad Esquerda,D-Pad Esquerda,D-Pad Left
+D-Pad Direita,D-Pad Direita,D-Pad Right
+Analógico Esq X,Analógico Esq X,Left Stick X
+Analógico Esq Y,Analógico Esq Y,Left Stick Y
+Analógico Dir X,Analógico Dir X,Right Stick X
+Analógico Dir Y,Analógico Dir Y,Right Stick Y
+Gatilho Esq (L2),Gatilho Esq (L2),Left Trigger (L2)
+Gatilho Dir (R2),Gatilho Dir (R2),Right Trigger (R2)
+Eixo,Eixo,Axis
+Tamanho,Tamanho,Size
+Opacidade,Opacidade,Opacity
+VOLTAR,VOLTAR,BACK
+RESETAR,RESETAR,RESET
+SALVAR,SALVAR,SAVE
+Desativar Touch,Desativar Touch,Disable Touch
+Super Selector,Seletor de Super,Super Selector
+Reliquia Select,Seletor de Relíquia,Relic Select
+Shoots Select 1,Seletor de Tiro 1,Shoot Select 1
+Shoots Select 2,Seletor de Tiro 2,Shoot Select 2
+Recuperando HP...,Recuperando HP...,Recovering HP...
+Português,Português,Portuguese
+English,Inglês,English
+MÚSICA:,MÚSICA:,MUSIC:
+EFEITOS SONOROS:,EFEITOS SONOROS:,SOUND EFFECTS:
+VOLUME PRINCIPAL:,VOLUME PRINCIPAL:,MASTER VOLUME:
+BRILHO:,BRILHO:,BRIGHTNESS:
+VISUAL,VISUAL,VISUAL
+Português:,Português:,Português:
+English:,English:,English:

@@ -1,0 +1,316 @@
+[gd_scene format=3 uid="uid://i0b84k4f0i06"]
+
+[ext_resource type="Script" uid="uid://vd6d78bw8l0s" path="res://Scripts/Player/peashooter.gd" id="1_xjeay"]
+[ext_resource type="Texture2D" uid="uid://ddh8ncc3wi2qt" path="res://Assets/shoots/roundabount/roundabout_death_0001.png" id="2_gruoc"]
+[ext_resource type="Texture2D" uid="uid://c8i24mgefmgq" path="res://Assets/shoots/roundabount/roundabout_death_0002.png" id="3_7agap"]
+[ext_resource type="Texture2D" uid="uid://cgom5i6db1f6w" path="res://Assets/shoots/roundabount/roundabout_death_0003.png" id="4_p1bba"]
+[ext_resource type="Texture2D" uid="uid://cp7n55ljw2h46" path="res://Assets/shoots/roundabount/roundabout_death_0004.png" id="5_j8itn"]
+[ext_resource type="Texture2D" uid="uid://b6nrxjgsexa5y" path="res://Assets/shoots/roundabount/roundabout_death_0005.png" id="6_5pcgi"]
+[ext_resource type="Texture2D" uid="uid://cxhf7vx36pish" path="res://Assets/shoots/roundabount/roundabout_death_0006.png" id="7_aypex"]
+[ext_resource type="Texture2D" uid="uid://nta8aywq1pgw" path="res://Assets/shoots/roundabount/Sheet.png" id="8_djodf"]
+[ext_resource type="AudioStream" uid="uid://chqp6oft6bv1v" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_01.wav" id="15_7agap"]
+[ext_resource type="AudioStream" uid="uid://bxq1304374bl2" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_02.wav" id="16_p1bba"]
+[ext_resource type="AudioStream" uid="uid://cejqpt0djy5ge" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_03.wav" id="17_j8itn"]
+[ext_resource type="AudioStream" uid="uid://c0i1msgdfn0ej" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_04.wav" id="18_5pcgi"]
+[ext_resource type="Texture2D" uid="uid://eed1oe2786i4" path="res://Assets/shoots/roundabount/roundabout_loopB_0001.png" id="18_l3d1n"]
+[ext_resource type="AudioStream" uid="uid://caiui7xafr02w" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_05.wav" id="19_aypex"]
+[ext_resource type="Texture2D" uid="uid://cmkalycg04tlw" path="res://Assets/shoots/roundabount/roundabout_loopB_0002.png" id="19_wvd6s"]
+[ext_resource type="Texture2D" uid="uid://ciqq03c4foehh" path="res://Assets/shoots/roundabount/roundabout_loopB_0003.png" id="20_7oslx"]
+[ext_resource type="AudioStream" uid="uid://cinx3ohwgp8i8" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_06.wav" id="20_l3d1n"]
+[ext_resource type="Texture2D" uid="uid://codd8adyj4tdt" path="res://Assets/shoots/roundabount/roundabout_loopB_0004.png" id="21_vblib"]
+[ext_resource type="AudioStream" uid="uid://dbnjykshm5axa" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_07.wav" id="21_wvd6s"]
+[ext_resource type="AudioStream" uid="uid://db83b3mvdqhh" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_08.wav" id="22_7oslx"]
+[ext_resource type="Texture2D" uid="uid://vxq8cc1vx0l7" path="res://Assets/shoots/roundabount/roundabout_loopB_0005.png" id="22_77vwk"]
+[ext_resource type="Texture2D" uid="uid://cm4mt6mxd8lga" path="res://Assets/shoots/roundabount/roundabout_loopB_0006.png" id="23_tvm6i"]
+[ext_resource type="AudioStream" uid="uid://bim5tx2etpmt2" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_09.wav" id="23_vblib"]
+[ext_resource type="AudioStream" uid="uid://br1g6xsvnuwpw" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_10.wav" id="24_77vwk"]
+[ext_resource type="Texture2D" uid="uid://b36bmuswuctg8" path="res://Assets/shoots/roundabount/roundabout_loopB_0007.png" id="24_gyfx6"]
+[ext_resource type="Texture2D" uid="uid://cy1cwy0rg5bru" path="res://Assets/shoots/roundabount/roundabout_loopB_0008.png" id="25_cissp"]
+[ext_resource type="AudioStream" uid="uid://daqqsc3d5rj5m" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_11.wav" id="25_tvm6i"]
+[ext_resource type="Texture2D" uid="uid://oxrmvub1ent7" path="res://Assets/shoots/roundabount/roundabout_loopB_0009.png" id="26_4obd7"]
+[ext_resource type="AudioStream" uid="uid://4uwaw251otiy" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_12.wav" id="26_gyfx6"]
+[ext_resource type="AudioStream" uid="uid://mbttgh86ljj8" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_13.wav" id="27_cissp"]
+[ext_resource type="Texture2D" uid="uid://2hiapuk64wy5" path="res://Assets/shoots/roundabount/roundabout_loopB_0010.png" id="27_kv1sb"]
+[ext_resource type="AudioStream" uid="uid://car73gj6ejmcn" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_14.wav" id="28_4obd7"]
+[ext_resource type="Texture2D" uid="uid://bm0sk15dcpqlm" path="res://Assets/shoots/roundabount/roundabout_trans_0001.png" id="28_j8itn"]
+[ext_resource type="Texture2D" uid="uid://cy2tigj53rhrd" path="res://Assets/shoots/roundabount/roundabout_trans_0002.png" id="29_5pcgi"]
+[ext_resource type="AudioStream" uid="uid://b3y88r1edavj5" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_15.wav" id="29_kv1sb"]
+[ext_resource type="AudioStream" uid="uid://cmhbbvhrkf0rm" path="res://Audios/Cuphead/Shoots/hit/sfx_player_shoot_hit_16.wav" id="30_5rj3h"]
+[ext_resource type="Texture2D" uid="uid://oeflw0tdwc16" path="res://Assets/shoots/roundabount/roundabout_trans_0003.png" id="30_aypex"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0i0un"]
+atlas = ExtResource("8_djodf")
+region = Rect2(0, 0, 118, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_10055"]
+atlas = ExtResource("8_djodf")
+region = Rect2(118, 0, 118, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ml6g"]
+atlas = ExtResource("8_djodf")
+region = Rect2(236, 0, 118, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j2ymy"]
+atlas = ExtResource("8_djodf")
+region = Rect2(354, 0, 118, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qtuan"]
+atlas = ExtResource("8_djodf")
+region = Rect2(472, 0, 118, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gruoc"]
+atlas = ExtResource("8_djodf")
+region = Rect2(590, 0, 118, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7agap"]
+atlas = ExtResource("8_djodf")
+region = Rect2(708, 0, 118, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1bba"]
+atlas = ExtResource("8_djodf")
+region = Rect2(826, 0, 118, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8itn"]
+atlas = ExtResource("8_djodf")
+region = Rect2(944, 0, 118, 88)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5pcgi"]
+atlas = ExtResource("8_djodf")
+region = Rect2(1062, 0, 118, 88)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2weig"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gruoc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7agap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_p1bba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_j8itn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5pcgi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_aypex")
+}],
+"loop": false,
+"name": &"death",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"intro_a",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"intro_b",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0i0un")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_10055")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ml6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j2ymy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qtuan")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gruoc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7agap")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p1bba")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8itn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5pcgi")
+}],
+"loop": true,
+"name": &"main",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_l3d1n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_wvd6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_7oslx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_vblib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_77vwk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_tvm6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_gyfx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_cissp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_4obd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_kv1sb")
+}],
+"loop": true,
+"name": &"main_2",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("28_j8itn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_5pcgi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_aypex")
+}],
+"loop": false,
+"name": &"turn",
+"speed": 24.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tsonu"]
+size = Vector2(81, 33)
+
+[node name="roundabount" type="Area2D" unique_id=573293350]
+top_level = true
+script = ExtResource("1_xjeay")
+shoot = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2035019207]
+sprite_frames = SubResource("SpriteFrames_2weig")
+animation = &"main"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=90220055]
+position = Vector2(-1.5, -0.5)
+shape = SubResource("RectangleShape2D_tsonu")
+
+[node name="Timer" type="Timer" parent="." unique_id=1371026107]
+wait_time = 4.0
+one_shot = true
+autostart = true
+
+[node name="Timer2" type="Timer" parent="." unique_id=1306286989]
+wait_time = 0.17
+one_shot = true
+autostart = true
+
+[node name="Colided1" type="AudioStreamPlayer2D" parent="." unique_id=1290694522]
+stream = ExtResource("15_7agap")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided2" type="AudioStreamPlayer2D" parent="." unique_id=743022011]
+stream = ExtResource("16_p1bba")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided3" type="AudioStreamPlayer2D" parent="." unique_id=790061946]
+stream = ExtResource("17_j8itn")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided4" type="AudioStreamPlayer2D" parent="." unique_id=1393291379]
+stream = ExtResource("18_5pcgi")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided5" type="AudioStreamPlayer2D" parent="." unique_id=1589634694]
+stream = ExtResource("19_aypex")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided6" type="AudioStreamPlayer2D" parent="." unique_id=1308899269]
+stream = ExtResource("20_l3d1n")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided7" type="AudioStreamPlayer2D" parent="." unique_id=17164425]
+stream = ExtResource("21_wvd6s")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided8" type="AudioStreamPlayer2D" parent="." unique_id=1804499562]
+stream = ExtResource("22_7oslx")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided9" type="AudioStreamPlayer2D" parent="." unique_id=1125964322]
+stream = ExtResource("23_vblib")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided10" type="AudioStreamPlayer2D" parent="." unique_id=1025036779]
+stream = ExtResource("24_77vwk")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided11" type="AudioStreamPlayer2D" parent="." unique_id=1160517745]
+stream = ExtResource("25_tvm6i")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided12" type="AudioStreamPlayer2D" parent="." unique_id=267660879]
+stream = ExtResource("26_gyfx6")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided13" type="AudioStreamPlayer2D" parent="." unique_id=203465462]
+stream = ExtResource("27_cissp")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided14" type="AudioStreamPlayer2D" parent="." unique_id=1860297594]
+stream = ExtResource("28_4obd7")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided15" type="AudioStreamPlayer2D" parent="." unique_id=650471693]
+stream = ExtResource("29_kv1sb")
+volume_db = -20.0
+bus = &"SFX"
+
+[node name="Colided16" type="AudioStreamPlayer2D" parent="." unique_id=234276106]
+stream = ExtResource("30_5rj3h")
+volume_db = -20.0
+bus = &"SFX"
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]

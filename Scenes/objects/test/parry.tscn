@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://cuidh02sgetqm"]
+
+[ext_resource type="Script" uid="uid://eu7yoos5srgi" path="res://Scripts/Player/parry.gd" id="1_um67l"]
+[ext_resource type="Texture2D" uid="uid://d4arnvrd7x0sg" path="res://Assets/test/tutorial_pink_sphere_1.png" id="2_0et7l"]
+[ext_resource type="Texture2D" uid="uid://caone00gf5r4l" path="res://Assets/test/tutorial_sphere_1.png" id="3_2gofc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sm5jj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0et7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2gofc")
+}],
+"loop": false,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nu6al"]
+radius = 14.035668
+
+[node name="parry" type="Area2D" unique_id=458815001 groups=["parryavel"]]
+script = ExtResource("1_um67l")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=345731353]
+sprite_frames = SubResource("SpriteFrames_sm5jj")
+
+[node name="Timer" type="Timer" parent="." unique_id=1161824467]
+wait_time = 0.3
+one_shot = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=377289313]
+shape = SubResource("CircleShape2D_nu6al")

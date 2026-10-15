@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://b8r6i7bdctvkd"]
+
+[ext_resource type="Texture2D" uid="uid://cbbo0xixx6ibd" path="res://Assets/World/I/world1_ocean_01.png" id="1_ufasq"]
+[ext_resource type="Texture2D" uid="uid://c83ti4vtjmb4" path="res://Assets/World/I/world1_ocean_02.png" id="2_awfvy"]
+[ext_resource type="Texture2D" uid="uid://oakilf317moa" path="res://Assets/World/I/world1_small_island_main.png" id="3_nwgd3"]
+[ext_resource type="Texture2D" uid="uid://b6e1cu0lcaowr" path="res://Assets/World/I/world1_large_island_main_01.png" id="4_2mc8e"]
+[ext_resource type="Texture2D" uid="uid://cwopp6oxlhgwo" path="res://Assets/World/I/world1_buoy.png" id="4_n6oe7"]
+[ext_resource type="Texture2D" uid="uid://bvj7pb251045e" path="res://Assets/World/I/world1_lighthouse.png" id="5_8kj5n"]
+[ext_resource type="Texture2D" uid="uid://cgyd422kbiprf" path="res://Assets/World/I/world1_large_island_main_02.png" id="5_n6oe7"]
+[ext_resource type="Texture2D" uid="uid://cupv0m18hacc7" path="res://Assets/World/I/world1_tree_island.png" id="6_adkty"]
+[ext_resource type="Texture2D" uid="uid://0ep7l05emei1" path="res://Assets/World/I/world1_dock.png" id="6_awfvy"]
+[ext_resource type="Texture2D" uid="uid://gh4eel847i88" path="res://Assets/World/I/world1_boat.png" id="7_8kj5n"]
+[ext_resource type="Texture2D" uid="uid://b73o8wpi6jko7" path="res://Assets/World/I/world1_bridge_main.png" id="11_adkty"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_to1nc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ufasq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_awfvy")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xa0aj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_awfvy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n6oe7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8kj5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_adkty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8kj5n")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cjqyn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_nwgd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2mc8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_n6oe7")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jh35w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_adkty")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Isle I" type="Node2D" unique_id=1756486224]
+
+[node name="Ocean" type="AnimatedSprite2D" parent="." unique_id=1744593561]
+sprite_frames = SubResource("SpriteFrames_to1nc")
+centered = false
+
+[node name="Ocean2" type="AnimatedSprite2D" parent="Ocean" unique_id=1642227620]
+position = Vector2(1846, 0)
+sprite_frames = SubResource("SpriteFrames_to1nc")
+frame = 1
+centered = false
+
+[node name="Rest2" type="AnimatedSprite2D" parent="." unique_id=188360926]
+position = Vector2(277, 519)
+scale = Vector2(0.91578937, 0.95652187)
+sprite_frames = SubResource("SpriteFrames_xa0aj")
+frame = 2
+
+[node name="Island" type="AnimatedSprite2D" parent="." unique_id=2022228]
+position = Vector2(864, 884)
+scale = Vector2(0.9025974, 0.87086093)
+sprite_frames = SubResource("SpriteFrames_cjqyn")
+
+[node name="Island2" type="AnimatedSprite2D" parent="Island" unique_id=1971615175]
+position = Vector2(1185.4675, 36.171204)
+scale = Vector2(1, 1.0343136)
+sprite_frames = SubResource("SpriteFrames_cjqyn")
+frame = 1
+
+[node name="Island3" type="AnimatedSprite2D" parent="Island" unique_id=1608329705]
+position = Vector2(2427.6545, 57.41449)
+scale = Vector2(1.003922, 1.0343136)
+sprite_frames = SubResource("SpriteFrames_cjqyn")
+frame = 2
+
+[node name="Rest" type="AnimatedSprite2D" parent="." unique_id=514016434]
+position = Vector2(501.00003, 1187)
+scale = Vector2(0.91578937, 0.95652187)
+sprite_frames = SubResource("SpriteFrames_xa0aj")
+
+[node name="Rest5" type="AnimatedSprite2D" parent="Rest" unique_id=365217505]
+position = Vector2(-162.70117, 28.227295)
+scale = Vector2(0.99999994, 1)
+sprite_frames = SubResource("SpriteFrames_xa0aj")
+frame = 4
+
+[node name="Rest4" type="AnimatedSprite2D" parent="Rest" unique_id=2038373046]
+position = Vector2(-362.52875, -392.04547)
+scale = Vector2(0.99999994, 1)
+sprite_frames = SubResource("SpriteFrames_xa0aj")
+frame = 1
+
+[node name="Rest3" type="AnimatedSprite2D" parent="Rest" unique_id=2078427456]
+position = Vector2(1861.782, 609.4999)
+scale = Vector2(0.99999994, 1)
+sprite_frames = SubResource("SpriteFrames_xa0aj")
+frame = 3
+
+[node name="Bridge" type="AnimatedSprite2D" parent="." unique_id=117345446]
+position = Vector2(1454.095, 962.937)
+scale = Vector2(0.8813422, 0.8813422)
+sprite_frames = SubResource("SpriteFrames_jh35w")

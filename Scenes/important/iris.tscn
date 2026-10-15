@@ -1,0 +1,150 @@
+[gd_scene format=3 uid="uid://1cnja8mcwk85"]
+
+[ext_resource type="Script" uid="uid://d24px70cvb37p" path="res://Scripts/important/iris.gd" id="1_e53pr"]
+[ext_resource type="Texture2D" uid="uid://c5ukcbqxfyub8" path="res://Assets/iris/irisA_0000.png" id="1_msygs"]
+[ext_resource type="Texture2D" uid="uid://2tiqyhirixkd" path="res://Assets/iris/irisA_0001.png" id="2_isjmm"]
+[ext_resource type="Texture2D" uid="uid://hnre1xbyqt4t" path="res://Assets/iris/irisA_0002.png" id="3_ryqyv"]
+[ext_resource type="Texture2D" uid="uid://vcudygsx760l" path="res://Assets/iris/irisA_0003.png" id="4_n0gpa"]
+[ext_resource type="Texture2D" uid="uid://bvcyqqntdt1ou" path="res://Assets/iris/irisA_0004.png" id="5_dbjy8"]
+[ext_resource type="Texture2D" uid="uid://b60odhr84iqh6" path="res://Assets/iris/irisA_0005.png" id="6_i53w1"]
+[ext_resource type="Texture2D" uid="uid://c8w1bqta3y5aa" path="res://Assets/iris/irisA_0006.png" id="7_p75wm"]
+[ext_resource type="Texture2D" uid="uid://dfx1bu1cu6pct" path="res://Assets/iris/irisA_0007.png" id="8_6qc40"]
+[ext_resource type="Texture2D" uid="uid://y5kr8jlxyrys" path="res://Assets/iris/irisA_0008.png" id="9_ag2ul"]
+[ext_resource type="Texture2D" uid="uid://caatlvvthb6eb" path="res://Assets/iris/irisA_0009.png" id="10_xac0e"]
+[ext_resource type="Texture2D" uid="uid://2sov7hogpdgp" path="res://Assets/iris/irisA_0010.png" id="11_4y5lk"]
+[ext_resource type="Texture2D" uid="uid://cbqmn7lpmgmg3" path="res://Assets/iris/irisA_0011.png" id="12_l7iey"]
+[ext_resource type="Texture2D" uid="uid://bcomeq5idvunt" path="res://Assets/iris/irisA_0012.png" id="13_u8ah7"]
+[ext_resource type="Texture2D" uid="uid://ds251afy4ns6i" path="res://Assets/iris/irisA_0013.png" id="14_lxwtf"]
+[ext_resource type="Texture2D" uid="uid://cdopmd5vclhpo" path="res://Assets/iris/irisA_0014.png" id="15_7pmeh"]
+[ext_resource type="Texture2D" uid="uid://djdp0cqig2n51" path="res://Assets/iris/irisA_0015.png" id="16_0d46m"]
+[ext_resource type="Texture2D" uid="uid://cxvku0tr08l8x" path="res://Assets/iris/irisA_0016.png" id="17_602cd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ahmqw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_msygs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_isjmm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ryqyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n0gpa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_dbjy8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i53w1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_p75wm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6qc40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ag2ul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xac0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_4y5lk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_l7iey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_u8ah7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_lxwtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_7pmeh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0d46m")
+}, {
+"duration": 0.01,
+"texture": ExtResource("17_602cd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_602cd")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_602cd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0d46m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_7pmeh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_lxwtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_u8ah7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_l7iey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_4y5lk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xac0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ag2ul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6qc40")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_p75wm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i53w1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_dbjy8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_n0gpa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ryqyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_isjmm")
+}, {
+"duration": 0.01,
+"texture": ExtResource("1_msygs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_msygs")
+}],
+"loop": 0,
+"name": &"reverse",
+"speed": 24.0
+}]
+
+[node name="Iris" type="AnimatedSprite2D" unique_id=667152222]
+scale = Vector2(2.2743056, 2.2743056)
+sprite_frames = SubResource("SpriteFrames_ahmqw")
+animation = &"reverse"
+frame = 17
+frame_progress = 1.0
+centered = false
+script = ExtResource("1_e53pr")

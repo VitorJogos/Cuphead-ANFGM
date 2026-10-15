@@ -1,0 +1,13 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Builds exportados (exe/apk/zip ficam fora - GitHub recusa arquivos acima de 100 MB)
+/Exports/
+
+# Fotos de referencia (fora do GitHub)
+/para me guiar/
+
+# Perfis de jogador: ficam so na maquina, nunca vao pro GitHub
+/keys/*
+!/keys/Keys.json
