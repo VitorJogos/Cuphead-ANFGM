@@ -38,19 +38,19 @@ func _process(_delta: float) -> void:
 	#if $shoottimer.is_stopped()
 	if player.actualshoot == 0:
 		$".".play("peashooter")
-		$shoottimer.wait_time = 0.125
+		$shoottimer.wait_time = 0.11
 	if player.actualshoot == 1:
 		$".".play("spreadshot")
-		$shoottimer.wait_time = 0.15
+		$shoottimer.wait_time = 0.13
 	if player.actualshoot == 2:
 		$".".play("roundabount")
-		$shoottimer.wait_time = 0.27
+		$shoottimer.wait_time = 0.25
 	if player.actualshoot == 3:
 		$".".play("homing")
-		$shoottimer.wait_time = 0.167
+		$shoottimer.wait_time = 0.15
 	if player.actualshoot == 4:
 		$".".play("obus")
-		$shoottimer.wait_time = 0.45
+		$shoottimer.wait_time = 0.4
 	if player.dir == 6:
 		rotation_degrees = 210
 	if player.dir == 1:
@@ -149,6 +149,13 @@ func _on_shoottimer_timeout() -> void:
 			
 			# Define a rotação base da arma + o desvio do leque
 			shoot.global_rotation_degrees = global_rotation_degrees + offset
+			# Velocidades iguais ao original: centro 2250 / ±15° 1125 / ±30° 1687,5
+			var _spd = 2250.0
+			if absf(float(offset)) == 15.0:
+				_spd = 1125.0
+			elif absf(float(offset)) == 30.0:
+				_spd = 1687.5
+			shoot.speed = _spd
 			
 			# Configura se é um tiro forte ou fraco (os das pontas e o do meio são fortes)
 			if offset == -30 or offset == 0 or offset == 30:
@@ -200,19 +207,19 @@ func _on_charge_timeout() -> void:
 func atualizaranim():
 	if player.actualshoot == 0:
 		$".".play("peashooter")
-		$shoottimer.wait_time = 0.125
+		$shoottimer.wait_time = 0.11
 	if player.actualshoot == 1:
 		$".".play("spreadshot")
-		$shoottimer.wait_time = 0.15
+		$shoottimer.wait_time = 0.13
 	if player.actualshoot == 2:
 		$".".play("roundabount")
-		$shoottimer.wait_time = 0.27
+		$shoottimer.wait_time = 0.25
 	if player.actualshoot == 3:
 		$".".play("homing")
-		$shoottimer.wait_time = 0.167
+		$shoottimer.wait_time = 0.15
 	if player.actualshoot == 4:
 		$".".play("obus")
-		$shoottimer.wait_time = 0.45
+		$shoottimer.wait_time = 0.4
 	if player.actualshoot == 5:
 		if animation == "charge_2":
 			print("AAAAAAAAAA")

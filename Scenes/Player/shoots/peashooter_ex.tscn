@@ -142,9 +142,9 @@ size = Vector2(87, 95)
 [node name="Peashooter" type="Area2D" unique_id=573293350]
 top_level = true
 script = ExtResource("1_bpv6i")
-dano = 8
+dano = 8.334
 ex = true
-speed = 1000
+speed = 1500
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2035019207]
 sprite_frames = SubResource("SpriteFrames_2weig")

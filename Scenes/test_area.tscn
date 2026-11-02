@@ -10,12 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://chcf5p721yaqa" path="res://Scenes/HUD.tscn" id="5_bc04g"]
 [ext_resource type="FontFile" uid="uid://mrjsmv7bscca" path="res://Fonts/CupheadVogue-ExtraBold.ttf" id="10_kdq2s"]
 [ext_resource type="Script" uid="uid://y3jkd4hpoqeh" path="res://Scripts/Player/Superchoose.gd" id="10_nu6al"]
-[ext_resource type="PackedScene" uid="uid://dibcvon6ny6tc" path="res://Scenes/important/fighttext.tscn" id="10_sm5jj"]
-[ext_resource type="Texture2D" uid="uid://dafk5yll3xlla" path="res://Assets/Mobile/Hud/aim buttonactive.png" id="11_f4m3k"]
-[ext_resource type="Texture2D" uid="uid://bqlqmaefrufgr" path="res://Assets/Mobile/Hud/shooting.png" id="12_0u4ks"]
-[ext_resource type="PackedScene" uid="uid://03a667dx8h4t" path="res://Scenes/important/Pausemenu.tscn" id="13_6s2c6"]
+[ext_resource type="PackedScene" uid="uid://cwkk8yh5bk3i5" path="res://Scenes/important/all.tscn" id="12_kdq2s"]
 [ext_resource type="Texture2D" uid="uid://bsjjm4oe15d3x" path="res://Assets/test/dmg.png" id="13_xhu6h"]
-[ext_resource type="PackedScene" uid="uid://1cnja8mcwk85" path="res://Scenes/important/iris.tscn" id="16_0u4ks"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f4m3k"]
 size = Vector2(85.5, 82)
@@ -182,39 +178,6 @@ position = Vector2(126, 488)
 
 [node name="HUD" parent="." unique_id=1198476980 instance=ExtResource("5_bc04g")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1293286252]
-
-[node name="Fighttext" parent="CanvasLayer" unique_id=526630804 instance=ExtResource("10_sm5jj")]
-z_index = 10
-animation = &"knockout"
-
-[node name="pausemenu" parent="." unique_id=772093746 instance=ExtResource("13_6s2c6")]
-visible = false
-
-[node name="Mobile_HUD" parent="pausemenu/Controls" parent_id_path=PackedInt32Array(772093746, 1703104149) index="18" unique_id=996118429]
-visible = true
-
-[node name="aim" parent="pausemenu/Controls/Mobile_HUD/Control" parent_id_path=PackedInt32Array(772093746, 996118429, 328845056) index="7" unique_id=727828256]
-texture_pressed = ExtResource("11_f4m3k")
-
-[node name="shoot" parent="pausemenu/Controls/Mobile_HUD/Control" parent_id_path=PackedInt32Array(772093746, 996118429, 328845056) index="8" unique_id=598301083]
-texture_pressed = ExtResource("12_0u4ks")
-
-[node name="SliderTamanho" parent="pausemenu/Controls/Mobile_HUD/Control" parent_id_path=PackedInt32Array(772093746, 996118429, 328845056) index="10" unique_id=1934151653]
-visible = false
-
-[node name="SliderOpacidade" parent="pausemenu/Controls/Mobile_HUD/Control" parent_id_path=PackedInt32Array(772093746, 996118429, 328845056) index="11" unique_id=1422367975]
-visible = false
-
-[node name="voltarbut" parent="pausemenu/Controls/Mobile_HUD/Control" parent_id_path=PackedInt32Array(772093746, 996118429, 328845056) index="12" unique_id=1671190179]
-visible = false
-
-[node name="Resetbut" parent="pausemenu/Controls/Mobile_HUD/Control" parent_id_path=PackedInt32Array(772093746, 996118429, 328845056) index="13" unique_id=1353846535]
-visible = false
-
-[node name="savebut" parent="pausemenu/Controls/Mobile_HUD/Control" parent_id_path=PackedInt32Array(772093746, 996118429, 328845056) index="14" unique_id=1335857661]
-visible = false
-
 [node name="Buttons" type="CanvasLayer" parent="." unique_id=644664437]
 process_mode = 3
 
@@ -367,17 +330,10 @@ position = Vector2(581, 754.75)
 rotation = -1.5707964
 shape = SubResource("RectangleShape2D_6s2c6")
 
-[node name="Iris" type="CanvasLayer" parent="." unique_id=102581555]
-
-[node name="Iris" parent="Iris" unique_id=667152222 instance=ExtResource("16_0u4ks")]
-z_index = 300
-animation = &"default"
+[node name="All" parent="." unique_id=1037355073 instance=ExtResource("12_kdq2s")]
 
 [connection signal="pressed" from="Buttons/down" to="Buttons/down" method="_on_pressed"]
 [connection signal="item_selected" from="Buttons/OptionButton" to="Buttons/OptionButton" method="_on_item_selected"]
 [connection signal="item_selected" from="Buttons/OptionButton2" to="Buttons/OptionButton2" method="_on_item_selected"]
 [connection signal="item_selected" from="Buttons/OptionButton3" to="Buttons/OptionButton3" method="_on_item_selected"]
 [connection signal="item_selected" from="Buttons/OptionButton4" to="Buttons/OptionButton4" method="_on_item_selected"]
-
-[editable path="pausemenu"]
-[editable path="pausemenu/Controls/Mobile_HUD"]

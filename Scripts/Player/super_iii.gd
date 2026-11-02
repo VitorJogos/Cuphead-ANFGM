@@ -6,7 +6,7 @@ extends Area2D
 # Called when the node enters the scene tree for the first time.
 @onready var SpriteAnimated2D = $AnimatedSprite2D
 # Como no original, os Supers NÃO são afetados pelo nerf dos charms de coração.
-@export var dano = 4 * player.hpnerf
+@export var dano = 5.1 * player.hpnerf
 var startt = false
 # 🎮 1. CONFIGURAÇÕES DE MOVIMENTO DO CENTRO (O "Sol")
 var velocidade: Vector2 = Vector2.ZERO

@@ -336,7 +336,7 @@ libraries/ = SubResource("AnimationLibrary_58nba")
 autoplay = &"new_animation"
 
 [node name="charge" type="Timer" parent="." unique_id=877815841]
-wait_time = 1.35
+wait_time = 1.0
 one_shot = true
 
 [node name="Start_1" type="AudioStreamPlayer2D" parent="." unique_id=561425431]

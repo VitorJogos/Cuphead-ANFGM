@@ -5230,7 +5230,7 @@ libraries/ = SubResource("AnimationLibrary_qu8js")
 libraries/ = SubResource("AnimationLibrary_ula7w")
 
 [node name="Dashtimer" type="Timer" parent="." unique_id=352929871]
-wait_time = 0.4
+wait_time = 0.1
 one_shot = true
 
 [node name="Runtimer" type="Timer" parent="." unique_id=35188907]
@@ -5252,7 +5252,7 @@ position = Vector2(0.5, 18.83)
 shape = SubResource("CircleShape2D_q02id")
 
 [node name="Parrytimer" type="Timer" parent="." unique_id=593377907]
-wait_time = 0.5
+wait_time = 0.2
 one_shot = true
 
 [node name="Cardtimer" type="Timer" parent="." unique_id=1051331324]

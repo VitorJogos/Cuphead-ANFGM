@@ -1,7 +1,7 @@
 extends Area2D
 
 # Como no original, os Supers NÃO são afetados pelo nerf dos charms de coração.
-var dano = 27.15 * player.hpnerf
+var dano = 14.5 * player.hpnerf
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$CollisionShape2D.rotation_degrees = $".".rotation_degrees

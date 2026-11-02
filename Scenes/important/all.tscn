@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cwkk8yh5bk3i5"]
+
+[ext_resource type="PackedScene" uid="uid://dibcvon6ny6tc" path="res://Scenes/important/fighttext.tscn" id="1_tvpcy"]
+[ext_resource type="PackedScene" uid="uid://03a667dx8h4t" path="res://Scenes/important/Pausemenu.tscn" id="2_euid5"]
+[ext_resource type="PackedScene" uid="uid://1cnja8mcwk85" path="res://Scenes/important/iris.tscn" id="2_kkx8w"]
+
+[node name="All" type="Node2D" unique_id=1037355073]
+
+[node name="FightText" type="CanvasLayer" parent="." unique_id=539327686]
+
+[node name="Fighttext" parent="FightText" unique_id=526630804 instance=ExtResource("1_tvpcy")]
+
+[node name="pausemenu" parent="." unique_id=772093746 instance=ExtResource("2_euid5")]
+visible = false
+
+[node name="Iris" type="CanvasLayer" parent="." unique_id=1398203125]
+
+[node name="Iris" parent="Iris" unique_id=667152222 instance=ExtResource("2_kkx8w")]

@@ -176,7 +176,7 @@ animations = [{
 "duration": 1.0,
 "texture": null
 }],
-"loop": false,
+"loop": 0,
 "name": &"knockout",
 "speed": 24.0
 }, {
@@ -184,7 +184,7 @@ animations = [{
 "duration": 1.0,
 "texture": null
 }],
-"loop": true,
+"loop": 1,
 "name": &"new_animation",
 "speed": 5.0
 }, {
@@ -249,7 +249,7 @@ animations = [{
 "duration": 5.0,
 "texture": ExtResource("19_t08by")
 }],
-"loop": false,
+"loop": 0,
 "name": &"ready",
 "speed": 24.0
 }, {
@@ -344,7 +344,7 @@ animations = [{
 "duration": 1.0,
 "texture": null
 }],
-"loop": false,
+"loop": 0,
 "name": &"wallop",
 "speed": 24.0
 }]
@@ -352,8 +352,10 @@ animations = [{
 [node name="Fighttext" type="AnimatedSprite2D" unique_id=526630804]
 scale = Vector2(2.246166, 2.2461662)
 sprite_frames = SubResource("SpriteFrames_327nq")
-animation = &"new_animation"
+animation = &"knockout"
 autoplay = "new_animation"
+frame = 27
+frame_progress = 1.0
 offset = Vector2(258.12, 144.9)
 script = ExtResource("75_6k7xa")
 

@@ -11,6 +11,17 @@
 [ext_resource type="Texture2D" uid="uid://0ep7l05emei1" path="res://Assets/World/I/world1_dock.png" id="6_awfvy"]
 [ext_resource type="Texture2D" uid="uid://gh4eel847i88" path="res://Assets/World/I/world1_boat.png" id="7_8kj5n"]
 [ext_resource type="Texture2D" uid="uid://b73o8wpi6jko7" path="res://Assets/World/I/world1_bridge_main.png" id="11_adkty"]
+[ext_resource type="PackedScene" uid="uid://b2pv6u8134pih" path="res://Scenes/Player/player_1_world.tscn" id="12_taoxl"]
+[ext_resource type="Texture2D" uid="uid://b3itvbggiqgdh" path="res://Assets/World/I/1 Locals/The Elder Kettle/world1_icon_tutorial_0001.png" id="13_lscct"]
+[ext_resource type="Texture2D" uid="uid://biqketakffiip" path="res://Assets/World/I/1 Locals/The Elder Kettle/world1_icon_tutorial_0002.png" id="14_b3yso"]
+[ext_resource type="Texture2D" uid="uid://vx8raerqao08" path="res://Assets/World/I/1 Locals/The Elder Kettle/world1_icon_tutorial_0003.png" id="15_etmmo"]
+[ext_resource type="Texture2D" uid="uid://dupfpp412amoc" path="res://Assets/World/I/Toppers/Left/world1_top_level_pieces_01.png" id="17_etmmo"]
+[ext_resource type="Texture2D" uid="uid://c448fl8swt5sj" path="res://Assets/World/I/Mausoleum Bush Topper/world1_large_island_top_mausoleumBush.png" id="18_is6vt"]
+[ext_resource type="Texture2D" uid="uid://cgrx6r4rdpiuq" path="res://Assets/World/I/Back Topper/world1_bride_main_back_top.png" id="18_txo8j"]
+[ext_resource type="Texture2D" uid="uid://bhnjn5uyc86i5" path="res://Assets/World/I/Toppers/Right/world1_top_level_pieces_02.png" id="19_8gxjc"]
+[ext_resource type="Texture2D" uid="uid://8j6i2831y6jy" path="res://Assets/World/I/Front Topper/world1_bride_main_front_top.png" id="19_ckkvj"]
+[ext_resource type="Script" uid="uid://cikdajuxjcfha" path="res://Scripts/debug_poligonos.gd" id="99_dbg"]
+[ext_resource type="Script" uid="uid://dl3mv8k2qaqw0" path="res://Scripts/topper_ponte.gd" id="100_top"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_to1nc"]
 animations = [{
@@ -77,9 +88,84 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_d5y5o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_lscct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_b3yso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_etmmo")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 24.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_etmmo"]
+atlas = ExtResource("17_etmmo")
+region = Rect2(0, 216, 731, 716)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_is6vt"]
+atlas = ExtResource("17_etmmo")
+region = Rect2(1057, 0, 524, 1305)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2wgq6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_etmmo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_is6vt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_is6vt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_8gxjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_txo8j")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ujyr3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_etmmo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_is6vt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_is6vt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_8gxjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_txo8j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ckkvj")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 0.0
+}]
+
 [node name="Isle I" type="Node2D" unique_id=1756486224]
 
 [node name="Ocean" type="AnimatedSprite2D" parent="." unique_id=1744593561]
+z_index = -10
 sprite_frames = SubResource("SpriteFrames_to1nc")
 centered = false
 
@@ -90,12 +176,14 @@ frame = 1
 centered = false
 
 [node name="Rest2" type="AnimatedSprite2D" parent="." unique_id=188360926]
+z_index = -10
 position = Vector2(277, 519)
 scale = Vector2(0.91578937, 0.95652187)
 sprite_frames = SubResource("SpriteFrames_xa0aj")
 frame = 2
 
 [node name="Island" type="AnimatedSprite2D" parent="." unique_id=2022228]
+z_index = -10
 position = Vector2(864, 884)
 scale = Vector2(0.9025974, 0.87086093)
 sprite_frames = SubResource("SpriteFrames_cjqyn")
@@ -113,6 +201,7 @@ sprite_frames = SubResource("SpriteFrames_cjqyn")
 frame = 2
 
 [node name="Rest" type="AnimatedSprite2D" parent="." unique_id=514016434]
+z_index = -10
 position = Vector2(501.00003, 1187)
 scale = Vector2(0.91578937, 0.95652187)
 sprite_frames = SubResource("SpriteFrames_xa0aj")
@@ -136,6 +225,81 @@ sprite_frames = SubResource("SpriteFrames_xa0aj")
 frame = 3
 
 [node name="Bridge" type="AnimatedSprite2D" parent="." unique_id=117345446]
+z_index = -10
 position = Vector2(1454.095, 962.937)
 scale = Vector2(0.8813422, 0.8813422)
 sprite_frames = SubResource("SpriteFrames_jh35w")
+
+[node name="Elder Kettle" type="AnimatedSprite2D" parent="." unique_id=1019332528]
+z_index = 2
+position = Vector2(745, 663)
+sprite_frames = SubResource("SpriteFrames_d5y5o")
+autoplay = "default"
+frame_progress = 0.014926825
+
+[node name="Toppers" type="AnimatedSprite2D" parent="." unique_id=1709242330]
+z_index = 4
+position = Vector2(830.5, 904.5)
+scale = Vector2(0.9261285, 0.88407826)
+sprite_frames = SubResource("SpriteFrames_2wgq6")
+
+[node name="Toppers2" type="AnimatedSprite2D" parent="Toppers" unique_id=1013175457]
+z_index = 4
+position = Vector2(2087.7231, 662.27167)
+scale = Vector2(0.97310555, 1.0407596)
+sprite_frames = SubResource("SpriteFrames_2wgq6")
+frame = 2
+
+[node name="Toppers2" type="AnimatedSprite2D" parent="Toppers/Toppers2" unique_id=1514593292]
+z_index = 4
+position = Vector2(-132.59781, -546.1287)
+scale = Vector2(1.0099449, 0.9782708)
+sprite_frames = SubResource("SpriteFrames_2wgq6")
+frame = 3
+
+[node name="Toppers" type="AnimatedSprite2D" parent="Toppers" unique_id=287147510]
+z_index = 4
+position = Vector2(931.2962, 70.1295)
+scale = Vector2(0.98646116, 1.0201763)
+sprite_frames = SubResource("SpriteFrames_2wgq6")
+frame = 1
+
+[node name="Toppers4" type="AnimatedSprite2D" parent="Toppers" unique_id=1654928012]
+z_index = 4
+position = Vector2(674.104, 119.333336)
+scale = Vector2(0.950153, 1)
+sprite_frames = SubResource("SpriteFrames_ujyr3")
+frame = 5
+script = ExtResource("100_top")
+
+[node name="Colisao" type="Area2D" parent="." unique_id=1245382263 groups=["ilhas"]]
+z_index = 10
+
+[node name="IlhaPequena" type="CollisionPolygon2D" parent="Colisao" unique_id=783970959]
+polygon = PackedVector2Array(567, 807, 638, 763, 756, 756, 893, 767, 966, 797, 971, 944, 904, 977, 878, 1017, 881, 1054, 966, 1076, 1076, 1066, 1145, 1030, 1166, 988, 1156, 957, 1130, 941, 1139, 899, 1127, 874, 1178, 856, 1158, 800, 1342, 899, 1349, 1064, 1235, 1132, 1157, 1157, 1082, 1187, 987, 1191, 977, 1162, 957, 1148, 813, 1108, 716, 1067, 612, 979, 573, 896)
+
+[node name="IlhaGrande1a" type="CollisionPolygon2D" parent="Colisao" unique_id=678675162]
+polygon = PackedVector2Array(1918, 305, 2330, 227, 2447, 229, 2568, 234, 2685, 234, 2624, 287, 2638, 325, 2662, 345, 2674, 378, 2678, 408, 2662, 442, 2650, 458, 2643, 462, 2666, 478, 2676, 500, 2680, 530, 2688, 556, 2700, 576, 2724, 588, 2752, 586, 2700, 600, 2644, 612, 2596, 614, 2590, 600, 2594, 572, 2566, 566, 2523, 556, 2474, 540, 2462, 500, 2451, 460, 2459, 428, 2473, 402, 2468, 368, 2416, 344, 2355, 367, 1894, 470, 1947, 627, 2012, 669, 2196, 568, 2314, 520, 2316, 387, 2355, 375, 2370, 460, 2375, 497, 2370, 544, 2320, 572, 2203, 627, 2156, 659, 2142, 689, 2074, 780, 2046, 868, 2096, 942, 2160, 980, 2145, 1066, 2076, 1168, 2012, 1140, 1836, 1321, 1952, 1378, 2286, 1212, 2302, 1152, 2312, 1170, 2330, 1220, 2344, 1258, 2360, 1278, 2372, 1292, 2431, 1327, 2500, 1398, 2464, 1442, 2429, 1502, 2349, 1523, 2324, 1479, 2202, 1480, 2108, 1519, 2117, 1574, 2270, 1616, 2393, 1572, 2422, 1582, 2449, 1615, 2355, 1679, 2100, 1680, 2006.1, 1681.1, 1915.9, 1677.5, 1825.6, 1650.5, 1731, 1627, 1734, 1583, 1805, 1564, 1879, 1440, 1807, 1522, 1735, 1546, 1672, 1529, 1722, 1474, 1707, 1459, 1650, 1482, 1540, 1354, 1574, 1296, 1673, 1277, 1714, 1210, 1773, 1184, 1776, 1129, 1726, 1107, 1659, 1090, 1602, 1085, 1565, 1100, 1573, 1123, 1546, 1116, 1560, 905, 1626, 858, 1650, 832, 1660, 800, 1627, 705, 1552.1, 645.3, 1503, 555, 1524, 518, 1556.6, 499.4, 1611, 463, 1638, 491, 1569, 566, 1631, 620, 1710, 595, 1764, 525, 1784, 472, 1752, 384)
+
+[node name="IlhaGrande1b" type="CollisionPolygon2D" parent="Colisao" unique_id=1325395696]
+polygon = PackedVector2Array(2307, 687, 2363, 660, 2395, 658, 2404, 632, 2393, 610, 2470, 606, 2535, 602, 2560, 598, 2600, 602, 2616, 630, 2610, 700, 2575, 835, 2545, 925, 2535, 1050, 2555, 1168, 2545, 1240, 2548, 1280, 2546, 1300, 2518, 1300, 2517, 1280, 2454, 1240, 2449, 1200, 2444, 1160, 2419, 1120, 2383, 1100, 2356, 1075, 2330, 1046, 2305, 1022, 2294, 958, 2212, 901, 2204, 873, 2180, 797, 2219, 739, 2259, 748, 2325, 713)
+
+[node name="Farol" type="CollisionPolygon2D" parent="Colisao" unique_id=1489552815]
+polygon = PackedVector2Array(178, 592, 207.4, 577.3, 280.7, 572.6, 353.9, 582.1, 399.7, 606, 431.8, 641.4, 443.7, 683.5, 422.6, 712.2, 370, 703, 310, 703, 300, 714, 225.7, 716, 170.8, 687.3, 172, 640, 176, 612)
+
+[node name="Doca" type="CollisionPolygon2D" parent="Colisao" unique_id=953382658]
+polygon = PackedVector2Array(458, 1184, 472, 1150, 480, 1086, 524, 1070, 564, 1088, 560, 1190, 545, 1210, 528, 1234, 512, 1246, 500, 1254, 455.2, 1258.7, 425, 1215.7)
+
+[node name="Ponte" type="CollisionPolygon2D" parent="Colisao" unique_id=632754722]
+position = Vector2(0, -14)
+polygon = PackedVector2Array(1304.3, 916, 1400, 938, 1517.6, 938, 1609.2, 920, 1603.9, 1002.6, 1504, 1007, 1402, 1007, 1306, 1002.6)
+
+[node name="IlhaGrande2" type="CollisionPolygon2D" parent="Colisao" unique_id=1966233785]
+polygon = PackedVector2Array(2790, 560, 2828.8, 504.3, 2946.6, 499.8, 3055.3, 501.6, 3127.8, 506.1, 3194, 472, 3243, 400, 3246, 329, 3302, 366, 3337, 388, 3303, 423, 3260, 486, 3168, 542, 2811, 650, 2820, 821, 2894, 877, 2965, 909, 3041, 869, 3138, 769, 3158, 688, 3237, 684, 3258, 610, 3320, 603, 3360, 616, 3420, 630, 3480, 661, 3510, 710, 3496, 772, 3474, 809, 3437, 836, 3370, 867, 3262, 882, 3139, 924, 3144, 967, 3212, 969, 3265, 928, 3341, 951, 3331, 972, 3374, 994, 3450, 990, 3499.4, 968.2, 3490, 1022, 3495, 1076, 3465, 1117, 3582, 1198, 3616, 1251, 3585, 1294, 3439, 1324, 3376, 1305, 3321, 1262, 3233, 1240, 3200, 1253, 3190, 1320, 3160, 1350, 3120, 1390, 3080, 1410, 3060, 1400, 3050, 1450, 3055, 1520, 3065, 1580, 3073.5, 1604.2, 3001, 1633, 2928.5, 1679.8, 2846.9, 1715.8, 2765.4, 1739.3, 2700, 1743, 2680, 1738, 2660, 1732, 2650, 1725, 2640, 1710, 2615, 1700, 2605, 1670, 2595, 1640, 2570, 1625, 2550, 1585, 2535, 1540, 2541, 1500, 2547.9, 1463.6, 2545, 1460, 2557, 1440, 2588, 1420, 2642, 1400, 2637, 1380, 2628, 1360, 2601, 1340, 2567, 1320, 2531, 1296, 2533.4, 1238.5, 2547.9, 1175.4, 2520.7, 1085.3, 2508, 999.8, 2518.9, 912.4, 2542.5, 849.3, 2569.6, 777.3, 2596.8, 714.2, 2570, 590, 2666, 571, 2700, 586, 2740, 592, 2768, 580)
+
+[node name="DebugPoligonos" type="Node2D" parent="." unique_id=999000111]
+script = ExtResource("99_dbg")
+
+[node name="Player1_World" parent="." unique_id=929099191 instance=ExtResource("12_taoxl")]
+z_index = 3
+position = Vector2(778, 776)

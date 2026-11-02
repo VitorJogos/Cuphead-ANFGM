@@ -461,12 +461,12 @@ wait_time = 0.2
 one_shot = true
 
 [node name="Timer2" type="Timer" parent="." unique_id=280587524]
-wait_time = 7.0
+wait_time = 3.8
 one_shot = true
 autostart = true
 
 [node name="Timer3" type="Timer" parent="." unique_id=1818487377]
-wait_time = 0.12
+wait_time = 0.22
 one_shot = true
 
 [node name="audio1" type="AudioStreamPlayer2D" parent="." unique_id=930444443]

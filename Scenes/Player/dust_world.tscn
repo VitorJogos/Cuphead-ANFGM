@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://b1xwv7klrjtpb"]
+
+[ext_resource type="Script" uid="uid://cqlmwwrtug3b3" path="res://Scripts/Player/objremove.gd" id="1_lobtg"]
+[ext_resource type="Texture2D" uid="uid://b8u6addjjtif2" path="res://Assets/player_dust/world_walk/world_playerDustA_0001.png" id="1_nbjo5"]
+[ext_resource type="Texture2D" uid="uid://m73nnchvionr" path="res://Assets/player_dust/world_walk/world_playerDustA_0002.png" id="2_dtht6"]
+[ext_resource type="Texture2D" uid="uid://0o4fio4r8k44" path="res://Assets/player_dust/world_walk/world_playerDustA_0003.png" id="3_l3rb2"]
+[ext_resource type="Texture2D" uid="uid://c6hl04ud3bqiv" path="res://Assets/player_dust/world_walk/world_playerDustA_0004.png" id="4_ue1fl"]
+[ext_resource type="Texture2D" uid="uid://dn2oeoafkvd0l" path="res://Assets/player_dust/world_walk/world_playerDustA_0005.png" id="5_ebri1"]
+[ext_resource type="Texture2D" uid="uid://wua3dybug3sj" path="res://Assets/player_dust/world_walk/world_playerDustA_0006.png" id="6_qfuvw"]
+[ext_resource type="Texture2D" uid="uid://by7538xqnq8of" path="res://Assets/player_dust/world_walk/world_playerDustA_0007.png" id="7_y3iqy"]
+[ext_resource type="Texture2D" uid="uid://cor64xrn82ru1" path="res://Assets/player_dust/world_walk/world_playerDustA_0008.png" id="8_rkwwi"]
+[ext_resource type="Texture2D" uid="uid://lfv1l15qdudl" path="res://Assets/player_dust/world_walk/world_playerDustA_0009.png" id="9_vy2sw"]
+[ext_resource type="Texture2D" uid="uid://c7ryv7vqvk4nw" path="res://Assets/player_dust/world_walk/world_playerDustA_0010.png" id="10_e1nbi"]
+[ext_resource type="Texture2D" uid="uid://c51ohufyi10tq" path="res://Assets/player_dust/world_walk/world_playerDustA_0011.png" id="11_2f6u5"]
+[ext_resource type="Texture2D" uid="uid://bk0pjyfhxiw1p" path="res://Assets/player_dust/world_walk/world_playerDustA_0012.png" id="12_l24qg"]
+[ext_resource type="Texture2D" uid="uid://cyj44mbf218lx" path="res://Assets/player_dust/world_walk/world_playerDustA_0013.png" id="13_kiex2"]
+[ext_resource type="Texture2D" uid="uid://chmm2o2hlgge" path="res://Assets/player_dust/world_walk/world_playerDustA_0014.png" id="14_0npsu"]
+[ext_resource type="Texture2D" uid="uid://ceoyi3iphoesu" path="res://Assets/player_dust/world_walk/world_playerDustA_0015.png" id="15_pnrqe"]
+[ext_resource type="Texture2D" uid="uid://4icn0g8v68d5" path="res://Assets/player_dust/world_walk/world_playerDustA_0016.png" id="16_nk1hy"]
+[ext_resource type="Texture2D" uid="uid://cbnf3fvqi0n1s" path="res://Assets/player_dust/world_walk/world_playerDustA_0017.png" id="17_0n3dq"]
+[ext_resource type="Texture2D" uid="uid://7d1ad8ohpkmk" path="res://Assets/player_dust/world_walk/world_playerDustA_0018.png" id="18_hgcte"]
+[ext_resource type="Texture2D" uid="uid://dc0d477oug4ol" path="res://Assets/player_dust/world_walk/world_playerDustA_0019.png" id="19_bv5yf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mb1hq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nbjo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_dtht6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_l3rb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ue1fl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ebri1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qfuvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_y3iqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rkwwi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vy2sw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_e1nbi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_2f6u5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_l24qg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_kiex2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_0npsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_pnrqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_nk1hy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_0n3dq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_hgcte")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_bv5yf")
+}],
+"loop": 0,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="dust_world" type="AnimatedSprite2D" unique_id=1906315137]
+top_level = true
+z_index = -1
+sprite_frames = SubResource("SpriteFrames_mb1hq")
+autoplay = "default"
+frame = 18
+frame_progress = 1.0
+script = ExtResource("1_lobtg")

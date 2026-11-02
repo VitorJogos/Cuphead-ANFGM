@@ -15,7 +15,7 @@ var angulo_fixado : bool = false
 var atingidos = 0 # limite 4
 var tempo_entre_hits = 0.0 # Controla o intervalo do multi-hit
 var tempo_vida = 0.0 # Quanto tempo o tiro já existe (usado para o EX do roundabout não morrer ao nascer)
-@export var speed = 2100
+@export var speed = 2250
 var oneex = false
 var super2cards = false
 @export var forte = true
@@ -49,13 +49,10 @@ func _ready() -> void:
 	
 	if shoot == 1:
 		if not ex:
-			if not forte:
-				dano = 0.75 * player.lessdmg * player.hpnerf
-			else:
-				dano = 1.25 * player.lessdmg * player.hpnerf
-			speed = 1100
+			dano = 1.24 * player.lessdmg * player.hpnerf
+			speed = 2250
 		else:
-			dano = 11 * player.lessdmg * player.hpnerf
+			dano = 4.3 * player.lessdmg * player.hpnerf
 			speed = 500
 			
 	# ========================================================
@@ -64,10 +61,10 @@ func _ready() -> void:
 	if shoot == 2:
 		if not ex:
 			dano = 8.5 * player.lessdmg * player.hpnerf
-			speed = 1100
+			speed = 1400
 		else:
-			dano = 4.5 * player.lessdmg * player.hpnerf
-			speed = velocidade_maxima_ex 
+			dano = 5.0 * player.lessdmg * player.hpnerf
+			speed = 1000
 			ex_estado = 0 
 			ex_timer = 0.2 
 
@@ -77,11 +74,11 @@ func _ready() -> void:
 	# ========================================================
 	if shoot == 3:
 		if not ex:
-			dano = 2.6 * player.lessdmg * player.hpnerf
-			speed = 770
+			dano = 2.85 * player.lessdmg * player.hpnerf
+			speed = 1000
 		else:
-			# Dano oficial do Chaos Orbit
-			dano = 8.0 * player.lessdmg * player.hpnerf 
+			# Chaos Orbit do Chaser: 4 balas orbitando, cada uma com 7 de dano.
+			dano = 7.0 * player.lessdmg * player.hpnerf
 			speed = 0 # Desliga a velocidade normal para ele não fugir
 			
 			# 🛑 MÁGICA 1: O escudo não tem tempo de vida! Ele só some se bater.
@@ -101,12 +98,12 @@ func _ready() -> void:
 
 	# 🟣 CONFIGURAÇÃO DO OBUS / LOBBER (SHOOT 4)
 	if shoot == 4:
-		dano = 11.6 * player.lessdmg * player.hpnerf
+		dano = 14 * player.lessdmg * player.hpnerf
 		if not ex:
-			speed = 600
+			speed = 1600
 		else:
 			dano = 28 * player.lessdmg * player.hpnerf
-			speed = 2000
+			speed = 1600
 			
 	if not ex:
 		if shoot != 4:
@@ -127,7 +124,8 @@ func _ready() -> void:
 				# 🎵 Busca o nó pelo nome criado e dá Play
 				get_node(nome_do_no).play()
 				$AnimationPlayer.play("normal")
-				dano = 38 * player.lessdmg * player.hpnerf
+				dano = 46 * player.lessdmg * player.hpnerf
+				speed = 1300
 				$AnimatedSprite2D.play("intro_a")
 			else:
 				$AnimationPlayer.play("small")
@@ -146,8 +144,8 @@ func _ready() -> void:
 	# EX da Charge: fica parado no lugar com o ângulo fixo definido no disparo
 	# (fiel ao original), e não morre na hora.
 	if shoot == 5 and ex:
-		dano = 27 * player.lessdmg * player.hpnerf
-		speed = 1200
+		dano = 26 * player.lessdmg * player.hpnerf
+		speed = 1300
 		forte = true
 		# 🛑 CORRIGE a hitbox gigante: para a animação que escala a colisão 2x e
 		# deixa o EX com um tamanho razoável (não uma hitbox enorme invisível).
@@ -170,8 +168,12 @@ func _process(delta: float) -> void:
 	if shoot == 5 and not ex:
 		if forte:
 			$AnimationPlayer.play("normal")
+			dano = 13 * player.lessdmg * player.hpnerf
+			speed = 1300
 		else:
 			$AnimationPlayer.play("small")
+			dano = 6.5 * player.lessdmg * player.hpnerf
+			speed = 1300
 	if shoot == 5 and ex:
 		rotation_degrees = 0
 	if tempo_entre_hits > 0:
@@ -455,23 +457,23 @@ func die(foi_por_tempo: bool = false):
 
 	if not foi_por_tempo and not notdmg and not ex and not super2cards and not player.super2card:
 		if shoot == 0:
-			player.cardsadd += 0.17
+			player.cardsadd += 0.15
 		if shoot == 2:
-			player.cardsadd += 0.25
+			player.cardsadd += 0.319
 		if shoot == 1:
 			if forte:
-				player.cardsadd += 0.071
+				player.cardsadd += 0.0465
 			else:
-				player.cardsadd += 0.02
+				player.cardsadd += 0.0465
 		if shoot == 3:
-			player.cardsadd += 0.07
+			player.cardsadd += 0.107
 		if shoot == 4:
-			player.cardsadd += 0.2
+			player.cardsadd += 0.525
 		if shoot == 5:
 			if forte:
-				player.cardsadd += 0.5
+				player.cardsadd += 0.8675
 			else:
-				player.cardsadd += 0.085
+				player.cardsadd += 0.225
 	if shoot == 1:
 		if not ex:
 			if foi_por_tempo:
